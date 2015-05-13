@@ -4,13 +4,167 @@
  <title>yuandaima</title>
  <link href="http://yuxiaole.github.io/jekyll/" rel="self"/>
  <link href="http://yuxiaole.github.io/jekyll"/>
- <updated>2015-05-13T02:16:08-07:00</updated>
+ <updated>2015-05-13T08:16:56-07:00</updated>
  <id>http://yuxiaole.github.io/jekyll</id>
  <author>
    <name>yuandaima</name>
    <email>yuxiaole@mucfc.com</email>
  </author>
 
+ 
+ <entry>
+   <title>前端工程师</title>
+   <link href="http://yuxiaole.github.io/jekyll/2015/05/14/web-engineer"/>
+   <updated>2015-05-14T00:00:00-07:00</updated>
+   <id>http://yuxiaole.github.io/jekyll/2015/05/14/web-engineer</id>
+   <content type="html">&lt;h1&gt;为什么整个互联网行业都缺前端工程师？&lt;/h1&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;&lt;p&gt;现在，几乎整个互联网行业都缺前端工程师，不仅在刚起步的创业公司，上市公司乃至巨头，这个问题也一样存在。没错，优秀的前端工程师简直比大熊猫还稀少。&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;每天，100offer的HR群都有人在吐槽招不到前端工程师。实话说对这些需求，Betty也无能为力，因为在供不应求的前端招聘市场上，优秀的前端工程师才是有话语权的那一方。&lt;/p&gt;
+
+&lt;!--break--&gt;
+
+
+&lt;p&gt;放眼全球，不仅在国内的互联网行业，在国外，前端工程师一样是需求旺盛、供不应求的香饽饽。&lt;/p&gt;
+
+&lt;p&gt;举个例子，根据indeed.com抓取的数千家网站的职位显示：目前前端的热门岗位——「HTML5」是需求增长最快的开发岗位，在所有开发职位中排名第一，MongoDB和iOS紧随其后位列第二、第三。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/100920-a0bf3e9e1ae8ad23.png?imageView2/2/w/1240/q/100&quot; alt=&quot;web&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;可见，HTML5可以说是最热门的前端岗位了，在2010年和2014年底有两次爆发性增长，现在在美国的岗位需求甚至超过了iOS。&lt;/p&gt;
+
+&lt;p&gt;所以市场上优秀的前端工程师相对较缺少，是一个世界性难题。&lt;/p&gt;
+
+&lt;h3&gt;原因一：前端相对来说是一个新领域，当今的web需求要求更多的工程师供应&lt;/h3&gt;
+
+&lt;p&gt;可能很多人认为前端开发和web开发类似，而web开发已经有20多年的历史，所以前端并不是一个新领域。然而，前端工程师的概念中的「接口技术实现和用户体验作为一个专业的工作领域」，却无疑是很新的。大概几年前，前端开发的技术增长迅猛，如下图所示：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/100920-d3c95d559aa5004a.png?imageView2/2/w/1240/q/100&quot; alt=&quot;new&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;15年或更久以前，web的可视化设计和技术实现所需要的资源是平均分配的。随着网站的发展——网站不仅是一个登录页面，工程资源的需求越来越明显。人们开始专门学习网站专用的JS、后端技术、UX、数据库，甚至系统设计。&lt;/p&gt;
+
+&lt;p&gt;今天，一个像AirBnB/Facebook/Quora的Web应用程序，投入的工程资源比设计资源多得多。换句话说，如今，做出网页的视觉设计比技术实现要更快，所以当今的web需求要求更多的工程师供应。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/100920-29a474c12e5f2f35.jpg?imageView2/2/w/1240/q/100&quot; alt=&quot;engineer&quot; /&gt;&lt;/p&gt;
+
+&lt;h4&gt;现在，一位合格的前端工程师，必须对视觉设计有兴趣（或者乐于做一个受虐狂▼）。&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/100920-85dddc7874142e8a.jpg?imageView2/2/w/1240/q/100&quot; alt=&quot;game&quot; /&gt;&lt;/p&gt;
+
+&lt;h4&gt;很显然，要处理大量的Web应用程序需求，技术任务就要进行分类，以便于多人同时处理网站请求。事实上现在已经不可能一个人快速地解决所有的技术细节了。&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/100920-9ef8899b4ce9433c.jpg&quot; alt=&quot;reason&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;现在还有一类人是独自处理一个Web应用程序的所有问题，即「全栈工程师」，但是优秀的全栈工程师同样如大熊猫一般数量稀少。&lt;/p&gt;
+
+&lt;p&gt;现在，一个创业公司想要成功，几乎要覆盖一个Web应用程序的诸多技术方面：前端、后台、DBA、运营等。虽然已经有一些服务可以让企业购买登陆页面的前端模块和组件；但是如果你想要创造一些真正的Web应用程序，除了求助前端工程师，别无他法，就像你要创立一个品牌你也绕不开请一位设计师一样。&lt;/p&gt;
+
+&lt;h3&gt;原因二：对前端，普遍存在巨大的误解，其实前端一点也不简单&lt;/h3&gt;
+
+&lt;p&gt;大多人都认为前端开发是一个「相对于其他模块来说更简单的领域」，在他们心中的前端工程师是这样工作的：&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;1、把Photoshop文件、图片或者线框做成一个页面；&lt;/p&gt;
+
+&lt;p&gt;2、偶尔设计Photoshop文件、图片或者线框；&lt;/p&gt;
+
+&lt;p&gt;3、用JS实现动画、过渡效果；&lt;/p&gt;
+
+&lt;p&gt;4、用HTML和CSS编程，实现网页的内容和形式。&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;事实上，前端工程师在做的是：&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;1、在设计师和工程师之间创建可视化的语言；&lt;/p&gt;
+
+&lt;p&gt;2、根据设计稿定义一组代表内容、品牌和功能的组件；&lt;/p&gt;
+
+&lt;p&gt;3、为Web应用程序的框架、需求、可视化的语言和规格设定基准；&lt;/p&gt;
+
+&lt;p&gt;4、根据设备、浏览器、屏幕、动画来划分web应用的工作划分；&lt;/p&gt;
+
+&lt;p&gt;5、用QA基准来保证指南来确保品牌忠诚度、代码质量、产品标准；&lt;/p&gt;
+
+&lt;p&gt;6、调节Web应用程序的样式，包括间距、字体、标题、图标、布局等等；&lt;/p&gt;
+
+&lt;p&gt;7、根据不同分辨率、横屏竖屏等，调节Web应用程序的样式；&lt;/p&gt;
+
+&lt;p&gt;8、标记 Web 应用程序，使之语义化，SEO 友好；&lt;/p&gt;
+
+&lt;p&gt;9、通过API获取内容要考虑友好性、电池消耗性、设备和客户端的特性；&lt;/p&gt;
+
+&lt;p&gt;10、开发客户端要考虑动画的流畅、延迟加载、交互、应用工作流程，大多数时间用来考虑渐进增强和向后兼容的标准；&lt;/p&gt;
+
+&lt;p&gt;11、保证后台连接安全，采取跨地资源共享（ CORS ）的程序考虑，防止跨站点脚本（ XSS）和跨站点请求伪造（ CSRF ） ；&lt;/p&gt;
+
+&lt;p&gt;12、最重要的是，尽管有严格的期限、利益相关者的要求，以及设备的限制，无论现在还是将来永远是「客户第一」。&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;为了实现上述目标，前端工程师采用了从可视化到编程的多种工具 ，甚至有时要照顾市场、 UX 到内容tweakes等等。&lt;/p&gt;
+
+&lt;h3&gt;原因三：大量糟糕前端工程师的存在，扰乱了市场&lt;/h3&gt;
+
+&lt;p&gt;这或许是难以招到优秀前端工程师最明显的原因。由于前端工程师的入门门槛非常低，JS、CSS、HTML并不是很难入门掌握的语言，似乎只要花一点时间，谁都可以通过网上教程和书本学会它。对的，前端工程师市场就是被这些浅尝辄止的家伙搞坏的。&lt;/p&gt;
+
+&lt;p&gt;糟糕的前端工程师是这样做事的：&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;1、滥用 JavaScript 库，因为他们实际上并不了 JavaScript 的核心（e.g. 一切都用 jQuery）；&lt;/p&gt;
+
+&lt;p&gt;2、滥用 JavaScript 插件，无节制的复用别人的代码，哪怕自己根本读不懂；&lt;/p&gt;
+
+&lt;p&gt;3、不看需求、设计，也不做比较或评价，就给 Web 应用程序添加 CSS 框架，却只用到框架的一小部分；&lt;/p&gt;
+
+&lt;p&gt;4、认为只要用了 CSS 框架，网站就是响应式的，或是对响应式设计的意义理解不到位；&lt;/p&gt;
+
+&lt;p&gt;5、一边在说着「响应式 Web 设计」，却对服务器端解决方案技术一无所知；&lt;/p&gt;
+
+&lt;p&gt;6、用 CSS 编程时不做预处理器、命名规范等；&lt;/p&gt;
+
+&lt;p&gt;7、忽视性能、内存泄露（并不理解内存泄露的真正含义），不会检测代码；&lt;/p&gt;
+
+&lt;p&gt;8、不会用指标衡量一个产品，或者这种指标旨在自己的电脑、浏览器、设备有效；&lt;/p&gt;
+
+&lt;p&gt;9、忽视 30 年来的软件工程技术，闭门造车。&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;要知道，入门容易精通难，计算机和软件的基础对你用JS或浏览器编程都非常重要。web可能是最有影响力的平台和环境之一，在那里执行的程序必须被小心对待。一位优秀的前端工程师不仅要考虑web技术和语言，并且还要了解所有不同的组件、系统和概念。&lt;/p&gt;
+
+&lt;p&gt;以下是优秀的前端工程师在即时面对普通的任务也会做的事情（这才是市场急需的前端）：&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;1、DNS 解析，使用 CDN，把资源请求分散到多个域名上去；&lt;/p&gt;
+
+&lt;p&gt;2、理解 HTTP Headers (Expires、Cache-Control、If-Modified-Since)&lt;/p&gt;
+
+&lt;p&gt;3、Steve Souders 的所有高性能网页优化规则(参考：High Performance Websites 一书)&lt;/p&gt;
+
+&lt;p&gt;4、如何解决 PageSpeed、YSlow、Chrome Dev Tools Audit、Chrome Dev Tools Timeline 等工具列出的所有问题；&lt;/p&gt;
+
+&lt;p&gt;5、何时把任务传到服务器，何时适合传到客户端；&lt;/p&gt;
+
+&lt;p&gt;6、缓存，预取和延迟加载技术的使用；&lt;/p&gt;
+
+&lt;p&gt;7、原生 JavaScript，知道何时从头开始做，何时参考别人的代码，同时可以评估这样做的优缺点；&lt;/p&gt;
+
+&lt;p&gt;8、 最新的 MVC Javascript 库知识以及用法；&lt;/p&gt;
+
+&lt;p&gt;9、CSS 标准的知识与用法；&lt;/p&gt;
+
+&lt;p&gt;10、JavaScript的计算机科学部分的知识（内存管理，垃圾收集算法等等）&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;换句话说，如果说精通HTML+CSS+JS，了解后端知识，只是60分的合格前端；那么要想成为受追捧、拿高薪的80分优秀前端，要对业务需求和、架构设计有真正的运用；而100分的顶级前端，则必须要能够兼顾技术和设计，更接近「以前端开发为主的全栈工程师」了。&lt;/p&gt;
+
+&lt;h3&gt;100offer 说：市场不是缺少前端，而是缺少优秀的前端工程师&lt;/h3&gt;
+
+&lt;p&gt;现在，前端工程师终于前所未有的在web中占有了一席之地。随着多设备、浏览器和Web标准的演变革命，前端正在成为兼顾逻辑、性能、交互、体验的综合性岗位。&lt;/p&gt;
+
+&lt;p&gt;虽然现在互联网行业普遍缺少前端工程师，但是我们相信越来越多的人将会加入前端的大军。不仅是因为大多数前端工作提供的优渥薪水和办公环境，也是因为web中的前端编程变得越来越有挑战和意义。&lt;/p&gt;
+
+&lt;p&gt;最后，分享一组3~4月的100offer拍卖数据，给前端们鼓鼓劲：&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;前端工程师人均收获8.2个面试机会，已入职的前端工程师平均薪资涨幅达39%。其中，前端offer之王共收获47个offer，最高offer薪水38k*16 ，开自某土豪电商。&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;加油吧，前端！&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>jekyll</title>
@@ -26,16 +180,16 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;第一阶段，刚接触Blog，觉得很新鲜，试着选择一个免费空间来写。&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;第二阶段，发现免费空间限制太多，就自己购买域名和空间，搭建独立博客。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;第三阶段，觉得独立博客的管理太麻烦，最好在保留控制权的前提下，让别人来管，自己只负责写文章。&lt;/p&gt;
-
-&lt;p&gt;大多数Blog作者，都停留在第一和第二阶段，因为第三阶段不太容易到达：你很难找到俯首听命、愿意为你管理服务器的人。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;第三阶段，觉得独立博客的管理太麻烦，最好在保留控制权的前提下，让别人来管，自己只负责写文章。&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 
-&lt;p&gt;&lt;img src=&quot;http://image.beekka.com/blog/201208/bg2012082501.jpg&quot; alt=&quot;robot&quot; /&gt;&lt;/p&gt;
-
 &lt;!--break--&gt;
 
+
+&lt;p&gt;  大多数Blog作者，都停留在第一和第二阶段，因为第三阶段不太容易到达：你很难找到俯首听命、愿意为你管理服务器的人。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://image.beekka.com/blog/201208/bg2012082501.jpg&quot; alt=&quot;robot&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;  但是两年前，情况出现变化，一些程序员开始在ｇithub网站上搭建blog。他们既拥有绝对管理权，又享受github带来的便利—-不管何时何地，只要向主机提交commit，就能发布新文章。更妙的是，这一切还是免费的，github提供无限流量，世界各地都有理想的访问速度。&lt;/p&gt;
 
@@ -91,7 +245,7 @@
 
 &lt;p&gt;在搭建之前，你必须已经安装了git，并且有github账户。&lt;/p&gt;
 
-&lt;h5&gt;&lt;em&gt;第一步，创建项目。&lt;/em&gt;&lt;/h5&gt;
+&lt;h4&gt;&lt;strong&gt;第一步，创建项目。&lt;/strong&gt;&lt;/h4&gt;
 
 &lt;p&gt;在你的电脑上，建立一个目录，作为项目的主目录。我们假定，它的名称为jekyll_demo。&lt;/p&gt;
 
@@ -111,7 +265,7 @@
 
 &lt;p&gt;以下所有动作，都在该分支下完成。&lt;/p&gt;
 
-&lt;h5&gt;&lt;em&gt;第二步，创建设置文件。&lt;/em&gt;&lt;/h5&gt;
+&lt;h4&gt;&lt;strong&gt;第二步，创建设置文件。&lt;/strong&gt;&lt;/h4&gt;
 
 &lt;p&gt;在项目根目录下，建立一个名为_config.yml的文本文件。它是jekyll的设置文件，我们在里面填入如下内容，其他设置都可以用默认选项，具体解释参见官方网页。&lt;/p&gt;
 
@@ -124,7 +278,7 @@
 　　　　|--　_config.yml
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h5&gt;&lt;em&gt;第三步，创建模板文件。&lt;/em&gt;&lt;/h5&gt;
+&lt;h4&gt;&lt;strong&gt;第三步，创建模板文件。&lt;/strong&gt;&lt;/h4&gt;
 
 &lt;p&gt;在项目根目录下，创建一个_layouts目录，用于存放模板文件。&lt;/p&gt;
 
@@ -157,7 +311,7 @@
 　　　　  |　　　|--　default.html 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h5&gt;&lt;em&gt;第四步，创建文章。&lt;/em&gt;&lt;/h5&gt;
+&lt;h4&gt;&lt;strong&gt;第四步，创建文章。&lt;/strong&gt;&lt;/h4&gt;
 
 &lt;p&gt;回到项目根目录，创建一个_posts目录，用于存放blog文章。&lt;/p&gt;
 
@@ -192,7 +346,7 @@
 　　　　   |　　　|--　2012-08-25-hello-world.html
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h5&gt;&lt;em&gt;第五步，创建首页。&lt;/em&gt;&lt;/h5&gt;
+&lt;h4&gt;&lt;strong&gt;第五步，创建首页。&lt;/strong&gt;&lt;/h4&gt;
 
 &lt;pre&gt;&lt;code&gt;   ---
 　　 layout: default
@@ -202,7 +356,13 @@
 　　   &amp;lt;p&amp;gt;最新文章&amp;lt;/p&amp;gt;
 　　  &amp;lt;ul&amp;gt;
 　　　 　
+　　　　　   &amp;lt;li&amp;gt;14 May 2015 &amp;lt;a href=&quot;/2015/05/14/web-engineer&quot;&amp;gt;前端工程师&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+　　　   　
 　　　　　   &amp;lt;li&amp;gt;13 May 2015 &amp;lt;a href=&quot;/2015/05/13/jekyll-learn&quot;&amp;gt;jekyll&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+　　　   　
+　　　　　   &amp;lt;li&amp;gt;01 May 2015 &amp;lt;a href=&quot;/2015/05/01/sort-algorithm&quot;&amp;gt;各种排序算法总结&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+　　　   　
+　　　　　   &amp;lt;li&amp;gt;24 Jan 2015 &amp;lt;a href=&quot;/2015/01/24/goodjob&quot;&amp;gt;Goodjob&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
 　　　   　
 　　　　　   &amp;lt;li&amp;gt;20 May 2014 &amp;lt;a href=&quot;/2014/05/20/collect_color&quot;&amp;gt;收藏颜色&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
 　　　   　
@@ -242,7 +402,7 @@
 　　　   　|--　index.html
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h5&gt;&lt;em&gt;第六步，发布内容。&lt;/em&gt;&lt;/h5&gt;
+&lt;h4&gt;&lt;strong&gt;第六步，发布内容。&lt;/strong&gt;&lt;/h4&gt;
 
 &lt;p&gt;现在，这个简单的Blog就可以发布了。先把所有内容加入本地git库。
 有了文章以后，还需要有一个首页。&lt;/p&gt;
@@ -269,7 +429,7 @@
 
 &lt;p&gt;&lt;img src=&quot;http://image.beekka.com/blog/201208/bg2012082507.jpg&quot; alt=&quot;robot&quot; /&gt;&lt;/p&gt;
 
-&lt;h5&gt;&lt;em&gt;第七步，绑定域名。&lt;/em&gt;&lt;/h5&gt;
+&lt;h4&gt;&lt;strong&gt;第七步，绑定域名。&lt;/strong&gt;&lt;/h4&gt;
 
 &lt;p&gt;如果你不想用 http://username.github.com/jekyll_demo/ 这个域名，可以换成自己的域名。&lt;/p&gt;
 
@@ -280,6 +440,380 @@
 &lt;p&gt;至此，最简单的Blog就算搭建完成了。进一步的完善，请参考Jekyll创始人的示例库，以及其他用Jekyll搭建的blog。&lt;/p&gt;
 
 &lt;p&gt;（完）&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>各种排序算法总结</title>
+   <link href="http://yuxiaole.github.io/jekyll/2015/05/01/sort-algorithm"/>
+   <updated>2015-05-01T00:00:00-07:00</updated>
+   <id>http://yuxiaole.github.io/jekyll/2015/05/01/sort-algorithm</id>
+   <content type="html">&lt;h1&gt;各种排序算法总结&lt;/h1&gt;
+
+&lt;hr /&gt;
+
+&lt;h4&gt;排序算法是最基本最常用的算法。&lt;/h4&gt;
+
+&lt;p&gt;不同的排序算法在不同的场景或应用中会有不同的表现，我们需要对各种排序算法熟练才能将它们应用到实际当中，才能更好地发挥它们的优势。今天，来总结下各种排序算法。&lt;/p&gt;
+
+&lt;p&gt;下面这个表格总结了各种排序算法的复杂度与稳定性：&lt;/p&gt;
+
+&lt;!--break--&gt;
+
+
+&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/273973-ea2745b7ba94af60.png?imageView2/2/w/1240/q/100&quot; alt=&quot;sort&quot; /&gt;&lt;/p&gt;
+
+&lt;h4&gt;冒泡排序&lt;/h4&gt;
+
+&lt;p&gt;冒泡排序可谓是最经典的排序算法了，它是基于比较的排序算法，时间复杂度为O(n&lt;sup&gt;2&lt;/sup&gt;)，其优点是实现简单，n较小时性能较好。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;算法原理
+  相邻的数据进行两两比较，小数放在前面，大数放在后面，这样一趟下来，最小的数就被排在了第一位，第二趟也是如此，如此类推，直到所有的数据排序完成&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;c++代码实现&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;pre&gt;&lt;code&gt;void bubble_sort(int arr[], int len)
+{
+      for (int i = 0; i &amp;lt; len - 1; i++)
+      {
+          for (int j = len - 1; j &amp;gt;= i; j--)
+          {
+              if (arr[j] &amp;lt; arr[j - 1])
+              {
+                  int temp = arr[j];
+                  arr[j] = arr[j - 1];
+                  arr[j - 1] = temp;
+              }
+          }
+      }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4&gt;选择排序&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;算法原理
+先在未排序序列中找到最小（大）元素，存放到排序序列的起始位置，然后，再从剩余未排序元素中继续寻找最小（大）元素，然后放到已排序序列的末尾。以此类推，直到所有元素均排序完毕。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;c++代码实现&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;pre&gt;&lt;code&gt;void select_sort(int arr[], int len)
+  {
+      for (int i = 0; i &amp;lt; len; i++)
+      {
+          int index = i;
+          for (int j = i + 1; j &amp;lt; len; j++)
+          {
+              if (arr[j] &amp;lt; arr[index])
+                  index = j;
+          }
+          if (index != i)
+          {
+              int temp = arr[i];
+              arr[i] = arr[index];
+              arr[index] = temp; 
+          }
+      }
+  }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4&gt;插入排序&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;算法原理
+  将数据分为两部分，有序部分与无序部分，一开始有序部分包含第1个元素，依次将无序的元素插入到有序部分，直到所有元素有序。插入排序又分为直接插入排序、二分插入排序、链表插入等，这里只讨论直接插入排序。它是稳定的排序算法，时间复杂度为O(n&lt;sup&gt;2&lt;/sup&gt;)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;c++代码实现&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;pre&gt;&lt;code&gt;void insert_sort(int arr[], int len)
+  {
+      for (int i = 1; i &amp;lt; len; i ++)
+      {
+          int j = i - 1;
+          int k = arr[i];
+          while (j &amp;gt; -1 &amp;amp;&amp;amp; k &amp;lt; arr[j] )
+          {
+              arr[j + 1] = arr[j];
+              j --;
+          }
+          arr[j + 1] = k;
+      }
+  }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4&gt;快速排序&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;算法原理
+  快速排序是目前在实践中非常高效的一种排序算法，它不是稳定的排序算法，平均时间复杂度为O(nlogn)，最差情况下复杂度为O(n&lt;sup&gt;2&lt;/sup&gt;)。它的基本思想是：通过一趟排序将要排序的数据分割成独立的两部分，其中一部分的所有数据都比另外一部分的所有数据都要小，然后再按此方法对这两部分数据分别进行快速排序，整个排序过程可以递归进行，以此达到整个数据变成有序序列。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;c++代码实现&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;pre&gt;&lt;code&gt;void quick_sort(int arr[], int left, int right)
+{
+  if (left &amp;lt; right)
+  {
+      int i = left, j = right, target = arr[left];
+      while (i &amp;lt; j)
+      {
+          while (i &amp;lt; j &amp;amp;&amp;amp; arr[j] &amp;gt; target)
+              j--;
+          if (i &amp;lt; j)
+              arr[i++] = arr[j];
+
+          while (i &amp;lt; j &amp;amp;&amp;amp; arr[i] &amp;lt; target)
+              i++;
+          if (i &amp;lt; j)
+              arr[j] = arr[i];
+      }
+      arr[i] = target;
+      quick_sort(arr, left, i - 1);
+      quick_sort(arr, i + 1, right);
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4&gt;归并排序&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;算法原理&lt;/p&gt;
+
+&lt;p&gt;  归并排序具体工作原理如下（假设序列共有n个元素）：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt; * 将序列每相邻两个数字进行归并操作（merge)，形成floor(n/2)个序列，排序后每个序列包含两个元素
+
+ * 将上述序列再次归并，形成floor(n/4)个序列，每个序列包含四个元素
+
+ * 重复步骤2，直到所有元素排序完毕
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;归并排序是稳定的排序算法，其时间复杂度为O(nlogn)，如果是使用链表的实现的话，空间复杂度可以达到O(1)，但如果是使用数组来存储数据的话，在归并的过程中，需要临时空间来存储归并好的数据，所以空间复杂度为O(n)。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;c++代码实现&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;pre&gt;&lt;code&gt;void merge(int arr[], int temp_arr[], int start_index, int mid_index, int end_index)
+  {
+      int i = start_index, j = mid_index + 1;
+      int k = 0;
+      while (i &amp;lt; mid_index + 1 &amp;amp;&amp;amp; j &amp;lt; end_index + 1)
+      {
+          if (arr[i] &amp;gt; arr[j])
+              temp_arr[k++] = arr[j++];
+          else
+              temp_arr[k++] = arr[i++];
+      }
+      while (i &amp;lt; mid_index + 1)
+      {
+          temp_arr[k++] = arr[i++];
+      }
+      while (j &amp;lt; end_index + 1)
+          temp_arr[k++] = arr[j++];
+
+      for (i = 0, j = start_index; j &amp;lt; end_index + 1; i ++, j ++)
+          arr[j] = temp_arr[i];
+  }
+
+  void merge_sort(int arr[], int temp_arr[], int start_index, int end_index)
+  {
+      if (start_index &amp;lt; end_index)
+      {
+          int mid_index = (start_index + end_index) / 2;
+          merge_sort(arr, temp_arr, start_index, mid_index);
+          merge_sort(arr, temp_arr, mid_index + 1, end_index);
+          merge(arr, temp_arr, start_index, mid_index, end_index);
+      }
+  }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4&gt;堆排序&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;二叉堆&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;二叉堆是完全二叉树或者近似完全二叉树，满足两个特性&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  * 父结点的键值总是大于或等于(小于或等于)任何一个子节点的键值
+
+  * 每个结点的左子树和右子树都是一个二叉堆
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;当父结点的键值总是大于或等于任何一个子节点的键值时为最大堆。当父结点的键值总是小于或等于任何一个子节点的键值时为最小堆。一般二叉树简称为堆。&lt;/p&gt;
+
+&lt;h4&gt;堆的存储&lt;/h4&gt;
+
+&lt;p&gt;一般都是数组来存储堆，&lt;code&gt;i&lt;/code&gt;结点的父结点下标就为&lt;code&gt;(i – 1) / 2&lt;/code&gt;。它的左右子结点下标分别为&lt;code&gt;2 * i + 1&lt;/code&gt;和&lt;code&gt;2 * i + 2&lt;/code&gt;。如第0个结点左右子结点下标分别为1和2。存储结构如图所示：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/273973-d6e77b92c0a85ce5.png?imageView2/2/w/1240/q/100&quot; alt=&quot;heap&quot; /&gt;&lt;/p&gt;
+
+&lt;h4&gt;堆排序原理&lt;/h4&gt;
+
+&lt;p&gt;堆排序的时间复杂度为O(nlogn)&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;算法原理（以最大堆为例）&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt; 先将初始数据R[1..n]建成一个最大堆，此堆为初始的无序区&lt;/li&gt;
+&lt;li&gt; 再将关键字最大的记录R[1]（即堆顶）和无序区的最后一个记录R[n]交换，由此得到新的无序区R[1..n-1]和有序区R[n]，且满足R[1..n-1].keys≤R[n].key&lt;/li&gt;
+&lt;li&gt; 由于交换后新的根R[1]可能违反堆性质，故应将当前无序区R[1..n-1]调整为堆。&lt;/li&gt;
+&lt;li&gt; 重复2、3步骤，直到无序区只有一个元素为止。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;c++代码实现&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;pre&gt;&lt;code&gt;/**
+ * 将数组arr构建大根堆
+ * @param arr 待调整的数组
+ * @param i   待调整的数组元素的下标
+ * @param len 数组的长度
+ */
+void heap_adjust(int arr[], int i, int len)
+{
+    int child;
+    int temp;
+
+    for (; 2 * i + 1 &amp;lt; len; i = child)
+    {
+        child = 2 * i + 1;  // 子结点的位置 = 2 * 父结点的位置 + 1
+        // 得到子结点中键值较大的结点
+        if (child &amp;lt; len - 1 &amp;amp;&amp;amp; arr[child + 1] &amp;gt; arr[child])
+            child ++;
+        // 如果较大的子结点大于父结点那么把较大的子结点往上移动，替换它的父结点
+        if (arr[i] &amp;lt; arr[child])
+        {
+            temp = arr[i];
+            arr[i] = arr[child];
+            arr[child] = temp;
+        }
+        else
+            break;
+    }
+}
+
+/**
+ * 堆排序算法
+ */
+void heap_sort(int arr[], int len)
+{
+    int i;
+    // 调整序列的前半部分元素，调整完之后第一个元素是序列的最大的元素
+    for (int i = len / 2 - 1; i &amp;gt;= 0; i--)
+    {
+        heap_adjust(arr, i, len);
+    }
+
+    for (i = len - 1; i &amp;gt; 0; i--)
+    {
+        // 将第1个元素与当前最后一个元素交换，保证当前的最后一个位置的元素都是现在的这个序列中最大的
+        int temp = arr[0];
+        arr[0] = arr[i];
+        arr[i] = temp;
+        // 不断缩小调整heap的范围，每一次调整完毕保证第一个元素是当前序列的最大值
+        heap_adjust(arr, 0, i);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4&gt;未完待续&lt;/h4&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Goodjob</title>
+   <link href="http://yuxiaole.github.io/jekyll/2015/01/24/goodjob"/>
+   <updated>2015-01-24T00:00:00-08:00</updated>
+   <id>http://yuxiaole.github.io/jekyll/2015/01/24/goodjob</id>
+   <content type="html">&lt;h1&gt;如何分辨靠谱的互联网公司？&lt;/h1&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/100920-ea405e8dfa442cc4.png?imageView2/2/w/1240/q/100&quot; alt=&quot;sort&quot; /&gt;&lt;/p&gt;
+
+&lt;!--break--&gt;
+
+
+&lt;h4&gt;一、什么样的公司大家愿意加入？&lt;/h4&gt;
+
+&lt;h4&gt;1、所在行业&lt;/h4&gt;
+
+&lt;p&gt;我们这里有2500+公司，但程序员在我们的平台上可以拒绝任何一家发出邀约的公司，我一直很好奇为何有的公司接受率特别高，有的又奇低无比？按行业统计了下他们的邀请接受率，tada~统计答案来了：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/100920-167350cf356dc2a5.png&quot; alt=&quot;answer&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;O2O、金融、电子商务，是面试邀请接受率最高的行业。可能和市场需求及发展前景相关。&lt;/p&gt;
+
+&lt;h4&gt;2、薪资&lt;/h4&gt;
+
+&lt;p&gt;开出多少薪水对公司而言是量力而为，但愿意开价多少，多多少少体现出企业的诚意。&lt;/p&gt;
+
+&lt;p&gt;其他工作了三五年的程序员现在的薪水如何？&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/100920-41920acc40198686.png?imageView2/2/w/1240/q/100&quot; alt=&quot;salary&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;并不是给出越高的薪资就是越靠谱的公司，这个之前我们也有过统计。我惊奇地发现，原有薪资涨幅15-40%是一般靠谱的公司会给出的薪资。&lt;/p&gt;
+
+&lt;p&gt;程序员跳槽一次薪资涨幅能达到什么水平？&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/100920-fdc19ce95e1608dd.png?imageView2/2/w/1240/q/100&quot; alt=&quot;job&quot; /&gt;&lt;/p&gt;
+
+&lt;h4&gt;被拍卖的优秀程序员offer薪资的平均保守上涨幅度为31.9%。&lt;/h4&gt;
+
+&lt;p&gt;再精准一些，我们看看使用不同语言的程序员的薪资有着怎样的涨幅？&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/100920-ddec973fc9b2304c.png?imageView2/2/w/1240/q/100&quot; alt=&quot;language&quot; /&gt;&lt;/p&gt;
+
+&lt;h4&gt;3、看软性指标&lt;/h4&gt;
+
+&lt;p&gt;帮忙找女朋友或者前台妹子很漂亮，对程序员机会选择的影响，为零。&lt;/p&gt;
+
+&lt;p&gt;另外在面试中要考察的因素还有：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/100920-cfd30fb93d40e517.png&quot; alt=&quot;reason&quot; /&gt;&lt;/p&gt;
+
+&lt;h4&gt;二、为什么要拒绝一个看起来不错的机会？&lt;/h4&gt;
+
+&lt;p&gt;意外的是，薪水并不是成熟程序员拒绝面试邀请的最重要指标。&lt;/p&gt;
+
+&lt;p&gt;22岁的毕业生码农和28岁的成熟程序员的生活状态是完全不同的。&lt;/p&gt;
+
+&lt;p&gt;22岁的时候想改变世界也没什么可失去的，只要有不错的机会就能奔过去。&lt;/p&gt;
+
+&lt;p&gt;28岁的时候有家有口有房贷，选择的机会成本更高，自然也就相对保守。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/100920-c83c3109d5c63907.png&quot; alt=&quot;year&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt; 即便面试邀请在所在城市，离我住地太远也不行。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt; 作为一个成就感导向的手艺人，如果做的项目自己都看不到意义，哪儿有动力写代码？&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt; 待惯了各种制度完善、人员分工明确的大公司，我愿不愿意到创业公司啥都抗？&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h4&gt;三、其他的程序员，他们最后往哪儿跳了？&lt;/h4&gt;
+
+&lt;p&gt;根据100offer的入职名单，程序员跳槽集中在四个领域：电子商务、金融、O2O、在线教育。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/100920-c9b590f07204ae44.png&quot; alt=&quot;sort&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;100offer 说：&lt;/p&gt;
+
+&lt;p&gt;当然，上文提供的只是对行业大势的概览，选择是各取所需，把握机会还要充分结合个人情况。&lt;/p&gt;
+
+&lt;p&gt;还是要强调，跳槽是手段不是目的。在跳槽大潮中保持个人理性，一切都是为了更好的生活。&lt;/p&gt;
 </content>
  </entry>
  

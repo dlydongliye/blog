@@ -8,7 +8,10 @@ http://yuxiaole.github.io/jekyll/rss.xml
 http://yuxiaole.github.io/jekyll/sitemap.txt
 http://yuxiaole.github.io/jekyll/tags.html
 
+http://yuxiaole.github.io/jekyll/2015/05/14/web-engineer
 http://yuxiaole.github.io/jekyll/2015/05/13/jekyll-learn
+http://yuxiaole.github.io/jekyll/2015/05/01/sort-algorithm
+http://yuxiaole.github.io/jekyll/2015/01/24/goodjob
 http://yuxiaole.github.io/jekyll/2014/05/20/collect_color
 http://yuxiaole.github.io/jekyll/2014/05/10/template
 http://yuxiaole.github.io/jekyll/2014/05/03/view_render

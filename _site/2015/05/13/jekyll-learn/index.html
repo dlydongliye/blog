@@ -136,16 +136,16 @@
 <ul>
 <li><p>第一阶段，刚接触Blog，觉得很新鲜，试着选择一个免费空间来写。</p></li>
 <li><p>第二阶段，发现免费空间限制太多，就自己购买域名和空间，搭建独立博客。</p></li>
-<li><p>第三阶段，觉得独立博客的管理太麻烦，最好在保留控制权的前提下，让别人来管，自己只负责写文章。</p>
-
-<p>大多数Blog作者，都停留在第一和第二阶段，因为第三阶段不太容易到达：你很难找到俯首听命、愿意为你管理服务器的人。</p></li>
+<li><p>第三阶段，觉得独立博客的管理太麻烦，最好在保留控制权的前提下，让别人来管，自己只负责写文章。</p></li>
 </ul>
 
 
-<p><img src="http://image.beekka.com/blog/201208/bg2012082501.jpg" alt="robot" /></p>
-
 <!--break-->
 
+
+<p>  大多数Blog作者，都停留在第一和第二阶段，因为第三阶段不太容易到达：你很难找到俯首听命、愿意为你管理服务器的人。</p>
+
+<p><img src="http://image.beekka.com/blog/201208/bg2012082501.jpg" alt="robot" /></p>
 
 <p>  但是两年前，情况出现变化，一些程序员开始在ｇithub网站上搭建blog。他们既拥有绝对管理权，又享受github带来的便利—-不管何时何地，只要向主机提交commit，就能发布新文章。更妙的是，这一切还是免费的，github提供无限流量，世界各地都有理想的访问速度。</p>
 
@@ -201,7 +201,7 @@
 
 <p>在搭建之前，你必须已经安装了git，并且有github账户。</p>
 
-<h5><em>第一步，创建项目。</em></h5>
+<h4><strong>第一步，创建项目。</strong></h4>
 
 <p>在你的电脑上，建立一个目录，作为项目的主目录。我们假定，它的名称为jekyll_demo。</p>
 
@@ -221,7 +221,7 @@
 
 <p>以下所有动作，都在该分支下完成。</p>
 
-<h5><em>第二步，创建设置文件。</em></h5>
+<h4><strong>第二步，创建设置文件。</strong></h4>
 
 <p>在项目根目录下，建立一个名为_config.yml的文本文件。它是jekyll的设置文件，我们在里面填入如下内容，其他设置都可以用默认选项，具体解释参见官方网页。</p>
 
@@ -234,7 +234,7 @@
 　　　　|--　_config.yml
 </code></pre>
 
-<h5><em>第三步，创建模板文件。</em></h5>
+<h4><strong>第三步，创建模板文件。</strong></h4>
 
 <p>在项目根目录下，创建一个_layouts目录，用于存放模板文件。</p>
 
@@ -267,7 +267,7 @@
 　　　　  |　　　|--　default.html 
 </code></pre>
 
-<h5><em>第四步，创建文章。</em></h5>
+<h4><strong>第四步，创建文章。</strong></h4>
 
 <p>回到项目根目录，创建一个_posts目录，用于存放blog文章。</p>
 
@@ -302,7 +302,7 @@
 　　　　   |　　　|--　2012-08-25-hello-world.html
 </code></pre>
 
-<h5><em>第五步，创建首页。</em></h5>
+<h4><strong>第五步，创建首页。</strong></h4>
 
 <pre><code>   ---
 　　 layout: default
@@ -312,7 +312,13 @@
 　　   &lt;p&gt;最新文章&lt;/p&gt;
 　　  &lt;ul&gt;
 　　　 　
+　　　　　   &lt;li&gt;14 May 2015 &lt;a href="/2015/05/14/web-engineer"&gt;前端工程师&lt;/a&gt;&lt;/li&gt;
+　　　   　
 　　　　　   &lt;li&gt;13 May 2015 &lt;a href="/2015/05/13/jekyll-learn"&gt;jekyll&lt;/a&gt;&lt;/li&gt;
+　　　   　
+　　　　　   &lt;li&gt;01 May 2015 &lt;a href="/2015/05/01/sort-algorithm"&gt;各种排序算法总结&lt;/a&gt;&lt;/li&gt;
+　　　   　
+　　　　　   &lt;li&gt;24 Jan 2015 &lt;a href="/2015/01/24/goodjob"&gt;Goodjob&lt;/a&gt;&lt;/li&gt;
 　　　   　
 　　　　　   &lt;li&gt;20 May 2014 &lt;a href="/2014/05/20/collect_color"&gt;收藏颜色&lt;/a&gt;&lt;/li&gt;
 　　　   　
@@ -352,7 +358,7 @@
 　　　   　|--　index.html
 </code></pre>
 
-<h5><em>第六步，发布内容。</em></h5>
+<h4><strong>第六步，发布内容。</strong></h4>
 
 <p>现在，这个简单的Blog就可以发布了。先把所有内容加入本地git库。
 有了文章以后，还需要有一个首页。</p>
@@ -379,7 +385,7 @@
 
 <p><img src="http://image.beekka.com/blog/201208/bg2012082507.jpg" alt="robot" /></p>
 
-<h5><em>第七步，绑定域名。</em></h5>
+<h4><strong>第七步，绑定域名。</strong></h4>
 
 <p>如果你不想用 http://username.github.com/jekyll_demo/ 这个域名，可以换成自己的域名。</p>
 
@@ -404,7 +410,7 @@
   
      
     	<li><a href="/categories.html#技术分享-ref">
-    		技术分享 <span>7</span>
+    		技术分享 <span>8</span>
     	</a></li>
     
   
@@ -434,11 +440,11 @@
     <div class="pagination clearfix">
       <ul class = "pull-right">
       
-        <li class="prev"><a class="fa fa-arrow-circle-left" href="/2014/05/20/collect_color" title="收藏颜色"> 前一篇</a></li>
+        <li class="prev"><a class="fa fa-arrow-circle-left" href="/2015/05/01/sort-algorithm" title="各种排序算法总结"> 前一篇</a></li>
       
         <li><a class="fa fa-th" href="/archive.html"> 所有日志</a></li>
       
-        <li class="next disabled"><a >后一篇 <span class="fa fa-arrow-circle-right">  </span></a>
+        <li class="next"><a  href="/2015/05/14/web-engineer" title="前端工程师">后一篇 <span class="fa fa-arrow-circle-right">  </span></a></li>
       
       </ul>
     </div>

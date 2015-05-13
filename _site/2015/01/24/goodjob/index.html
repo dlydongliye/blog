@@ -3,8 +3,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>解决invalid byte sequence in GBK</title>
-    <meta name="description" content="">
+    <title>Goodjob</title>
+    
     <meta name="author" content="yuandaima">
 
     <!-- Enable responsive viewport -->
@@ -111,7 +111,7 @@
         
 <!--
 <div class="page-header">
-  <h1>解决invalid byte sequence in GBK </h1>
+  <h1>Goodjob <small>Supporting tagline</small></h1>
 </div>
 -->
  
@@ -121,32 +121,89 @@
     <div class="content card">
         <div class="date_label">
           <div class="day_month">
-          04/23
+          01/24
           </div>
           <div class="year">
-          2014
+          2015
           </div>
         </div>
-      <h1>解决invalid byte sequence in GBK</h1>
+      <h1>如何分辨靠谱的互联网公司？</h1>
 
 <hr />
 
-<p>　jekyll对中文的支持不太好，导致经常出现乱码甚至无法运行<code>jekyll server</code>命令。解决post内容乱码问题可以通过修改convertible.rb文件的第27行：</p>
-
-<pre><code>self.content = File.read(File.join(base, name));
-</code></pre>
-
-<p>为</p>
-
-<pre><code>self.content = File.read(File.join(base, name), :encoding =&gt; "utf-8");
-</code></pre>
-
-<p>　原因File.read()可能采用系统默认编码读取文件，中文系统为GBK，但markdown文件均为utf-8编码，所以导致无法正确展现中文。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/100920-ea405e8dfa442cc4.png?imageView2/2/w/1240/q/100" alt="sort" /></p>
 
 <!--break-->
 
 
-<p>　但是当我在post.html模板里面加入中文之后，<code>jekyll server</code>命令直接报错。解决办法是在运行服务器前先运行<code>chcp 65001</code>命令，即可解决。在官方找到的解决办法<strong>Windows users: run chcp 65001 first to change the command prompt's character encoding (code page) to UTF-8 so Jekyll runs without errors.</strong></p>
+<h4>一、什么样的公司大家愿意加入？</h4>
+
+<h4>1、所在行业</h4>
+
+<p>我们这里有2500+公司，但程序员在我们的平台上可以拒绝任何一家发出邀约的公司，我一直很好奇为何有的公司接受率特别高，有的又奇低无比？按行业统计了下他们的邀请接受率，tada~统计答案来了：</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/100920-167350cf356dc2a5.png" alt="answer" /></p>
+
+<p>O2O、金融、电子商务，是面试邀请接受率最高的行业。可能和市场需求及发展前景相关。</p>
+
+<h4>2、薪资</h4>
+
+<p>开出多少薪水对公司而言是量力而为，但愿意开价多少，多多少少体现出企业的诚意。</p>
+
+<p>其他工作了三五年的程序员现在的薪水如何？</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/100920-41920acc40198686.png?imageView2/2/w/1240/q/100" alt="salary" /></p>
+
+<p>并不是给出越高的薪资就是越靠谱的公司，这个之前我们也有过统计。我惊奇地发现，原有薪资涨幅15-40%是一般靠谱的公司会给出的薪资。</p>
+
+<p>程序员跳槽一次薪资涨幅能达到什么水平？</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/100920-fdc19ce95e1608dd.png?imageView2/2/w/1240/q/100" alt="job" /></p>
+
+<h4>被拍卖的优秀程序员offer薪资的平均保守上涨幅度为31.9%。</h4>
+
+<p>再精准一些，我们看看使用不同语言的程序员的薪资有着怎样的涨幅？</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/100920-ddec973fc9b2304c.png?imageView2/2/w/1240/q/100" alt="language" /></p>
+
+<h4>3、看软性指标</h4>
+
+<p>帮忙找女朋友或者前台妹子很漂亮，对程序员机会选择的影响，为零。</p>
+
+<p>另外在面试中要考察的因素还有：</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/100920-cfd30fb93d40e517.png" alt="reason" /></p>
+
+<h4>二、为什么要拒绝一个看起来不错的机会？</h4>
+
+<p>意外的是，薪水并不是成熟程序员拒绝面试邀请的最重要指标。</p>
+
+<p>22岁的毕业生码农和28岁的成熟程序员的生活状态是完全不同的。</p>
+
+<p>22岁的时候想改变世界也没什么可失去的，只要有不错的机会就能奔过去。</p>
+
+<p>28岁的时候有家有口有房贷，选择的机会成本更高，自然也就相对保守。</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/100920-c83c3109d5c63907.png" alt="year" /></p>
+
+<ul>
+<li><p> 即便面试邀请在所在城市，离我住地太远也不行。</p></li>
+<li><p> 作为一个成就感导向的手艺人，如果做的项目自己都看不到意义，哪儿有动力写代码？</p></li>
+<li><p> 待惯了各种制度完善、人员分工明确的大公司，我愿不愿意到创业公司啥都抗？</p></li>
+</ul>
+
+
+<h4>三、其他的程序员，他们最后往哪儿跳了？</h4>
+
+<p>根据100offer的入职名单，程序员跳槽集中在四个领域：电子商务、金融、O2O、在线教育。</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/100920-c9b590f07204ae44.png" alt="sort" /></p>
+
+<p>100offer 说：</p>
+
+<p>当然，上文提供的只是对行业大势的概览，选择是各取所需，把握机会还要充分结合个人情况。</p>
+
+<p>还是要强调，跳槽是手段不是目的。在跳槽大潮中保持个人理性，一切都是为了更好的生活。</p>
 
     </div>
 
@@ -160,8 +217,8 @@
 
   
      
-    	<li><a href="/categories.html#技术分享-ref">
-    		技术分享 <span>8</span>
+    	<li><a href="/categories.html#工作-ref">
+    		工作 <span>1</span>
     	</a></li>
     
   
@@ -179,9 +236,7 @@
 
   
      
-    	<li><a href="/tags.html#gbk-ref">gbk <span>1</span></a></li>
-     
-    	<li><a href="/tags.html#乱码-ref">乱码 <span>1</span></a></li>
+    	<li><a href="/tags.html#Goodjob-ref">Goodjob <span>1</span></a></li>
     
   
 
@@ -193,11 +248,11 @@
     <div class="pagination clearfix">
       <ul class = "pull-right">
       
-        <li class="prev"><a class="fa fa-arrow-circle-left" href="/2014/04/21/future" title="后智能手机时代"> 前一篇</a></li>
+        <li class="prev"><a class="fa fa-arrow-circle-left" href="/2014/05/20/collect_color" title="收藏颜色"> 前一篇</a></li>
       
         <li><a class="fa fa-th" href="/archive.html"> 所有日志</a></li>
       
-        <li class="next"><a  href="/2014/04/23/finish-jekyll" title="对5天来关于jekyll的心得">后一篇 <span class="fa fa-arrow-circle-right">  </span></a></li>
+        <li class="next"><a  href="/2015/05/01/sort-algorithm" title="各种排序算法总结">后一篇 <span class="fa fa-arrow-circle-right">  </span></a></li>
       
       </ul>
     </div>
