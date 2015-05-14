@@ -5,10 +5,371 @@
         <description>yuandaima - yuandaima</description>
         <link>http://yuxiaole.github.io/jekyll</link>
         <link>http://yuxiaole.github.io/jekyll</link>
-        <lastBuildDate>2015-05-13T02:16:08-07:00</lastBuildDate>
-        <pubDate>2015-05-13T02:16:08-07:00</pubDate>
+        <lastBuildDate>2015-05-14T02:08:42-07:00</lastBuildDate>
+        <pubDate>2015-05-14T02:08:42-07:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>redis</title>
+                <description>&lt;h1&gt;搭建Redis以及使用&lt;/h1&gt;
+
+&lt;hr /&gt;
+
+&lt;h4&gt;Redis的安装&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;在官网下载tar.gz的文件，并且解压，进入解压目录，执行 make&amp;amp;&amp;amp;make install，在make成功以后，会在src目录下多出一些可执行文件：redis-server，redis-cli等等。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;用cp命令复制到usr目录下运行。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;blockquote&gt;&lt;p&gt;cp redis-server /usr/local/bin/&lt;/p&gt;
+
+&lt;p&gt;cp redis-cli /usr/local/bin/&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;新建目录，存放配置文件&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;!--break--&gt;
+
+
+&lt;blockquote&gt;&lt;p&gt;mkdir /etc/redis&lt;/p&gt;
+
+&lt;p&gt;mkdir /var/redis&lt;/p&gt;
+
+&lt;p&gt;mkdir /var/redis/log&lt;/p&gt;
+
+&lt;p&gt;mkdir /var/redis/run&lt;/p&gt;
+
+&lt;p&gt;mkdir /var/redis/6379&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;在redis解压根目录中找到配置文件模板，复制到如下位置。&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;blockquote&gt;&lt;p&gt;cp redis.conf /etc/redis/6379.conf&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;因为在etc目录下文件只读，所以建议先在其他目录更改conf文件，然后在cp到redis&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;blockquote&gt;&lt;p&gt;daemonize yes&lt;/p&gt;
+
+&lt;p&gt;pidfile /var/redis/run/redis_6379.pid&lt;/p&gt;
+
+&lt;p&gt;logfile /var/redis/log/redis_6379.log&lt;/p&gt;
+
+&lt;p&gt;dir /var/redis/6379&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;最后运行redis：&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;blockquote&gt;&lt;p&gt;&lt;code&gt;$ redis-server /etc/redis/6379.conf&lt;/code&gt;&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;启动redis-cli：&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;blockquote&gt;&lt;p&gt;&lt;code&gt;/usr/local/bin/redis-cli&lt;/code&gt;&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;h4&gt;命令示例&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;ol&gt;
+&lt;li&gt;KEYS/RENAME/DEL/EXISTS/MOVE/RENAMENX:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h5&gt;在Shell命令行下启动Redis客户端工具。&lt;/h5&gt;
+
+&lt;blockquote&gt;&lt;p&gt;/&gt; redis-cli&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;h5&gt;清空当前选择的数据库，以便于对后面示例的理解。&lt;/h5&gt;
+
+&lt;blockquote&gt;&lt;p&gt;   redis 127.0.0.1:6379&gt; flushdb&lt;/p&gt;
+
+&lt;p&gt;   OK&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;h5&gt;添加String类型的模拟数据。&lt;/h5&gt;
+
+&lt;blockquote&gt;&lt;p&gt;   redis 127.0.0.1:6379&gt; set mykey 2&lt;/p&gt;
+
+&lt;p&gt;  OK&lt;/p&gt;
+
+&lt;p&gt;  redis 127.0.0.1:6379&gt; set mykey2 &quot;hello&quot;&lt;/p&gt;
+
+&lt;p&gt;   OK&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;h5&gt;添加Set类型的模拟数据。&lt;/h5&gt;
+
+&lt;blockquote&gt;&lt;p&gt;  redis 127.0.0.1:6379&gt; sadd mysetkey 1 2 3&lt;/p&gt;
+
+&lt;p&gt;  (integer) 3&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;h5&gt;添加Hash类型的模拟数据。&lt;/h5&gt;
+
+&lt;blockquote&gt;&lt;p&gt;   redis 127.0.0.1:6379&gt; hset mmtest username &quot;stephen&quot;&lt;/p&gt;
+
+&lt;p&gt;  (integer) 1&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;h5&gt;根据参数中的模式，获取当前数据库中符合该模式的所有key，从输出可以看出，该命令在执行时并不区分与Key关联的Value类型。&lt;/h5&gt;
+
+&lt;blockquote&gt;&lt;p&gt;   redis 127.0.0.1:6379&gt; keys my*&lt;/p&gt;
+
+&lt;p&gt;  1) &quot;mysetkey&quot;&lt;/p&gt;
+
+&lt;p&gt;   2) &quot;mykey&quot;&lt;/p&gt;
+
+&lt;p&gt;   3) &quot;mykey2&quot;&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;h5&gt;删除了两个Keys。&lt;/h5&gt;
+
+&lt;blockquote&gt;&lt;p&gt;  redis 127.0.0.1:6379&gt; del mykey mykey2&lt;/p&gt;
+
+&lt;p&gt;  (integer) 2&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;h5&gt;查看一下刚刚删除的Key是否还存在，从返回结果看，mykey确实已经删除了。&lt;/h5&gt;
+
+&lt;blockquote&gt;&lt;p&gt;  redis 127.0.0.1:6379&gt; exists mykey&lt;/p&gt;
+
+&lt;p&gt;  (integer) 0&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;h5&gt;查看一下没有删除的Key，以和上面的命令结果进行比较。&lt;/h5&gt;
+
+&lt;blockquote&gt;&lt;p&gt;  redis 127.0.0.1:6379&gt; exists mysetkey&lt;/p&gt;
+
+&lt;p&gt;   (integer) 1&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;h5&gt;将当前数据库中的mysetkey键移入到ID为1的数据库中，从结果可以看出已经移动成功。&lt;/h5&gt;
+
+&lt;blockquote&gt;&lt;p&gt;   redis 127.0.0.1:6379&gt; move mysetkey 1&lt;/p&gt;
+
+&lt;p&gt;  (integer) 1&lt;/p&gt;
+
+&lt;h5&gt;打开ID为1的数据库。&lt;/h5&gt;
+
+&lt;p&gt;  redis 127.0.0.1:6379&gt; select 1&lt;/p&gt;
+
+&lt;p&gt;  OK&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;h5&gt;查看一下刚刚移动过来的Key是否存在，从返回结果看已经存在了。&lt;/h5&gt;
+
+&lt;blockquote&gt;&lt;p&gt;   redis 127.0.0.1:6379[1]&gt; exists mysetkey&lt;/p&gt;
+
+&lt;p&gt;  (integer) 1&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;h5&gt;在重新打开ID为0的缺省数据库。&lt;/h5&gt;
+
+&lt;blockquote&gt;&lt;p&gt;   redis 127.0.0.1:6379[1]&gt; select 0&lt;/p&gt;
+
+&lt;p&gt;  OK&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;h5&gt;查看一下刚刚移走的Key是否已经不存在，从返回结果看已经移走。&lt;/h5&gt;
+
+&lt;blockquote&gt;&lt;p&gt;   redis 127.0.0.1:6379&gt; exists mysetkey&lt;/p&gt;
+
+&lt;p&gt;  (integer) 0&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;h5&gt;准备新的测试数据。&lt;/h5&gt;
+
+&lt;blockquote&gt;&lt;p&gt;   redis 127.0.0.1:6379&gt; set mykey &quot;hello&quot;&lt;/p&gt;
+
+&lt;p&gt;  OK&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;h5&gt;将mykey改名为mykey1&lt;/h5&gt;
+
+&lt;blockquote&gt;&lt;p&gt;   redis 127.0.0.1:6379&gt; rename mykey mykey1&lt;/p&gt;
+
+&lt;p&gt;   OK&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;h5&gt;由于mykey已经被重新命名，再次获取将返回nil。&lt;/h5&gt;
+
+&lt;blockquote&gt;&lt;p&gt;   redis 127.0.0.1:6379&gt; get mykey&lt;/p&gt;
+
+&lt;p&gt;   (nil)&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;h5&gt;通过新的键名获取。&lt;/h5&gt;
+
+&lt;blockquote&gt;&lt;p&gt;   redis 127.0.0.1:6379&gt; get mykey1&lt;/p&gt;
+
+&lt;p&gt;  &quot;hello&quot;&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;h5&gt;由于mykey已经不存在了，所以返回错误信息。&lt;/h5&gt;
+
+&lt;blockquote&gt;&lt;p&gt;   redis 127.0.0.1:6379&gt; rename mykey mykey1&lt;/p&gt;
+
+&lt;p&gt;   (error) ERR no such key&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;h5&gt;为renamenx准备测试key&lt;/h5&gt;
+
+&lt;blockquote&gt;&lt;p&gt;   redis 127.0.0.1:6379&gt; set oldkey &quot;hello&quot;&lt;/p&gt;
+
+&lt;p&gt;   OK&lt;/p&gt;
+
+&lt;p&gt;   redis 127.0.0.1:6379&gt; set newkey &quot;world&quot;&lt;/p&gt;
+
+&lt;p&gt;   OK&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;h5&gt;由于newkey已经存在，因此该命令未能成功执行。&lt;/h5&gt;
+
+&lt;blockquote&gt;&lt;p&gt;   redis 127.0.0.1:6379&gt; renamenx oldkey newkey&lt;/p&gt;
+
+&lt;p&gt;   (integer) 0&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;h5&gt;查看newkey的值，发现它也没有被renamenx覆盖。&lt;/h5&gt;
+
+&lt;blockquote&gt;&lt;p&gt;   redis 127.0.0.1:6379&gt; get newkey&lt;/p&gt;
+
+&lt;p&gt;   &quot;world&quot;&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;ol&gt;
+&lt;li&gt;PERSIST/EXPIRE/EXPIREAT/TTL:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h5&gt;为后面的示例准备的测试数据。&lt;/h5&gt;
+
+&lt;blockquote&gt;&lt;p&gt;   redis 127.0.0.1:6379&gt; set mykey &quot;hello&quot;&lt;/p&gt;
+
+&lt;p&gt;   OK&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;h5&gt;将该键的超时设置为100秒。&lt;/h5&gt;
+
+&lt;blockquote&gt;&lt;p&gt;   redis 127.0.0.1:6379&gt; expire mykey 100&lt;/p&gt;
+
+&lt;p&gt;  (integer) 1&lt;/p&gt;
+
+&lt;h5&gt;通过ttl命令查看一下还剩下多少秒。&lt;/h5&gt;
+
+&lt;p&gt;   redis 127.0.0.1:6379&gt; ttl mykey&lt;/p&gt;
+
+&lt;p&gt;   (integer) 97&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;h5&gt;立刻执行persist命令，该存在超时的键变成持久化的键，即将该Key的超时去掉。&lt;/h5&gt;
+
+&lt;blockquote&gt;&lt;p&gt;   redis 127.0.0.1:6379&gt; persist mykey&lt;/p&gt;
+
+&lt;p&gt;   (integer) 1&lt;/p&gt;
+
+&lt;h5&gt;ttl的返回值告诉我们，该键已经没有超时了。&lt;/h5&gt;
+
+&lt;p&gt;   redis 127.0.0.1:6379&gt; ttl mykey&lt;/p&gt;
+
+&lt;p&gt;   (integer) -1&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;h5&gt;为后面的expire命令准备数据。&lt;/h5&gt;
+
+&lt;blockquote&gt;&lt;p&gt;   redis 127.0.0.1:6379&gt; del mykey&lt;/p&gt;
+
+&lt;p&gt;   (integer) 1&lt;/p&gt;
+
+&lt;p&gt;   redis 127.0.0.1:6379&gt; set mykey &quot;hello&quot;&lt;/p&gt;
+
+&lt;p&gt;   OK&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;h5&gt;设置该键的超时被100秒。&lt;/h5&gt;
+
+&lt;blockquote&gt;&lt;p&gt;   redis 127.0.0.1:6379&gt; expire mykey 100&lt;/p&gt;
+
+&lt;p&gt;   (integer) 1&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;h5&gt;用ttl命令看一下当前还剩下多少秒，从结果中可以看出还剩下96秒。&lt;/h5&gt;
+
+&lt;blockquote&gt;&lt;p&gt;   redis 127.0.0.1:6379&gt; ttl mykey&lt;/p&gt;
+
+&lt;p&gt;   (integer) 96&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;h5&gt;重新更新该键的超时时间为20秒，从返回值可以看出该命令执行成功。&lt;/h5&gt;
+
+&lt;blockquote&gt;&lt;p&gt;   redis 127.0.0.1:6379&gt; expire mykey 20&lt;/p&gt;
+
+&lt;p&gt;   (integer) 1&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;h5&gt;再用ttl确认一下，从结果中可以看出果然被更新了。&lt;/h5&gt;
+
+&lt;blockquote&gt;&lt;p&gt;   redis 127.0.0.1:6379&gt; ttl mykey&lt;/p&gt;
+
+&lt;p&gt;   (integer) 17&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;h5&gt;立刻更新该键的值，以使其超时无效。&lt;/h5&gt;
+
+&lt;blockquote&gt;&lt;p&gt;   redis 127.0.0.1:6379&gt; set mykey &quot;world&quot;&lt;/p&gt;
+
+&lt;p&gt;   OK&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;h5&gt;从ttl的结果可以看出，在上一条修改该键的命令执行后，该键的超时也无效了。&lt;/h5&gt;
+
+&lt;blockquote&gt;&lt;p&gt;   redis 127.0.0.1:6379&gt; ttl mykey&lt;/p&gt;
+
+&lt;p&gt;   (integer) -1&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;ol&gt;
+&lt;li&gt;TYPE/RANDOMKEY/SORT:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h5&gt;由于mm键在数据库中不存在，因此该命令返回none。&lt;/h5&gt;
+
+&lt;blockquote&gt;&lt;p&gt;   redis 127.0.0.1:6379&gt; type mm&lt;/p&gt;
+
+&lt;p&gt;   none&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;h5&gt;mykey的值是字符串类型，因此返回string。&lt;/h5&gt;
+
+&lt;blockquote&gt;&lt;p&gt;   redis 127.0.0.1:6379&gt; type mykey&lt;/p&gt;
+
+&lt;p&gt;   string&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;h5&gt;准备一个值是set类型的键。&lt;/h5&gt;
+
+&lt;blockquote&gt;&lt;p&gt;   redis 127.0.0.1:6379&gt; sadd mysetkey 1 2&lt;/p&gt;
+
+&lt;p&gt;   (integer) 2&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;h5&gt;mysetkey的键是set，因此返回字符串set。&lt;/h5&gt;
+
+&lt;blockquote&gt;&lt;p&gt;   redis 127.0.0.1:6379&gt; type mysetkey&lt;/p&gt;
+
+&lt;p&gt;   set&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;h5&gt;返回数据库中的任意键。&lt;/h5&gt;
+
+&lt;blockquote&gt;&lt;p&gt;   redis 127.0.0.1:6379&gt; randomkey&lt;/p&gt;
+
+&lt;p&gt;   &quot;oldkey&quot;&lt;/p&gt;
+
+&lt;h5&gt;清空当前打开的数据库。&lt;/h5&gt;
+
+&lt;p&gt;   redis 127.0.0.1:6379&gt; flushdb&lt;/p&gt;
+
+&lt;p&gt;   OK&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;h5&gt;由于没有数据了，因此返回nil。&lt;/h5&gt;
+
+&lt;blockquote&gt;&lt;p&gt;   redis 127.0.0.1:6379&gt; randomkey&lt;/p&gt;
+
+&lt;p&gt;   (nil)&lt;/p&gt;&lt;/blockquote&gt;
+</description>
+                <link>http://yuxiaole.github.io/jekyll/2015/05/14/redis-learn</link>
+                <guid>http://yuxiaole.github.io/jekyll/2015/05/14/redis-learn</guid>
+                <pubDate>2015-05-14T00:00:00-07:00</pubDate>
+        </item>
 
         <item>
                 <title>jekyll</title>
@@ -86,7 +447,7 @@
 
 &lt;p&gt;在搭建之前，你必须已经安装了git，并且有github账户。&lt;/p&gt;
 
-&lt;h5&gt;&lt;em&gt;第一步，创建项目。&lt;/em&gt;&lt;/h5&gt;
+&lt;h4&gt;&lt;strong&gt;第一步，创建项目。&lt;/strong&gt;&lt;/h4&gt;
 
 &lt;p&gt;在你的电脑上，建立一个目录，作为项目的主目录。我们假定，它的名称为jekyll_demo。&lt;/p&gt;
 
@@ -106,7 +467,7 @@
 
 &lt;p&gt;以下所有动作，都在该分支下完成。&lt;/p&gt;
 
-&lt;h5&gt;&lt;em&gt;第二步，创建设置文件。&lt;/em&gt;&lt;/h5&gt;
+&lt;h4&gt;&lt;strong&gt;第二步，创建设置文件。&lt;/strong&gt;&lt;/h4&gt;
 
 &lt;p&gt;在项目根目录下，建立一个名为_config.yml的文本文件。它是jekyll的设置文件，我们在里面填入如下内容，其他设置都可以用默认选项，具体解释参见官方网页。&lt;/p&gt;
 
@@ -119,7 +480,7 @@
 　　　　|--　_config.yml
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h5&gt;&lt;em&gt;第三步，创建模板文件。&lt;/em&gt;&lt;/h5&gt;
+&lt;h4&gt;&lt;strong&gt;第三步，创建模板文件。&lt;/strong&gt;&lt;/h4&gt;
 
 &lt;p&gt;在项目根目录下，创建一个_layouts目录，用于存放模板文件。&lt;/p&gt;
 
@@ -152,7 +513,7 @@
 　　　　  |　　　|--　default.html 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h5&gt;&lt;em&gt;第四步，创建文章。&lt;/em&gt;&lt;/h5&gt;
+&lt;h4&gt;&lt;strong&gt;第四步，创建文章。&lt;/strong&gt;&lt;/h4&gt;
 
 &lt;p&gt;回到项目根目录，创建一个_posts目录，用于存放blog文章。&lt;/p&gt;
 
@@ -187,7 +548,7 @@
 　　　　   |　　　|--　2012-08-25-hello-world.html
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h5&gt;&lt;em&gt;第五步，创建首页。&lt;/em&gt;&lt;/h5&gt;
+&lt;h4&gt;&lt;strong&gt;第五步，创建首页。&lt;/strong&gt;&lt;/h4&gt;
 
 &lt;pre&gt;&lt;code&gt;   ---
 　　 layout: default
@@ -197,6 +558,8 @@
 　　   &amp;lt;p&amp;gt;最新文章&amp;lt;/p&amp;gt;
 　　  &amp;lt;ul&amp;gt;
 　　　 　
+　　　　　   &amp;lt;li&amp;gt;14 May 2015 &amp;lt;a href=&quot;/2015/05/14/redis-learn&quot;&amp;gt;redis&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+　　　   　
 　　　　　   &amp;lt;li&amp;gt;13 May 2015 &amp;lt;a href=&quot;/2015/05/13/jekyll-learn&quot;&amp;gt;jekyll&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
 　　　   　
 　　　　　   &amp;lt;li&amp;gt;20 May 2014 &amp;lt;a href=&quot;/2014/05/20/collect_color&quot;&amp;gt;收藏颜色&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
@@ -237,7 +600,7 @@
 　　　   　|--　index.html
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h5&gt;&lt;em&gt;第六步，发布内容。&lt;/em&gt;&lt;/h5&gt;
+&lt;h4&gt;&lt;strong&gt;第六步，发布内容。&lt;/strong&gt;&lt;/h4&gt;
 
 &lt;p&gt;现在，这个简单的Blog就可以发布了。先把所有内容加入本地git库。
 有了文章以后，还需要有一个首页。&lt;/p&gt;
@@ -264,7 +627,7 @@
 
 &lt;p&gt;&lt;img src=&quot;http://image.beekka.com/blog/201208/bg2012082507.jpg&quot; alt=&quot;robot&quot; /&gt;&lt;/p&gt;
 
-&lt;h5&gt;&lt;em&gt;第七步，绑定域名。&lt;/em&gt;&lt;/h5&gt;
+&lt;h4&gt;&lt;strong&gt;第七步，绑定域名。&lt;/strong&gt;&lt;/h4&gt;
 
 &lt;p&gt;如果你不想用 http://username.github.com/jekyll_demo/ 这个域名，可以换成自己的域名。&lt;/p&gt;
 

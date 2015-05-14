@@ -1,0 +1,577 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>redis</title>
+    <meta name="description" content="">
+    <meta name="author" content="yuandaima">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="/assets/themes/twitter/bootstrap/css/bootstrap.2.2.2.min.css" rel="stylesheet">
+    <link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+    <link href="/assets/themes/twitter/css/prettify.css" rel="stylesheet" type="text/css">
+    <script src="/assets/themes/twitter/js/prettify.js"></script>
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+
+    <!-- atom & rss feed -->
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+    
+<!--    font-awesome-->
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  
+  </head>
+
+  <body onload="prettyPrint()">
+    <div class="navbar">
+      <div class="navbar-inner">
+       <div class="nav-narrow">
+          <a class="brand" href="/"><span class="fa fa-mortar-board (alias)">yuandaima</span></a>
+          <ul class="nav">
+            
+            
+            
+
+
+  
+    
+      
+      	
+      	<li><a href="/archive.html">文章</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/categories.html">分类</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/pages.html">页面</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/tags.html">标签</a></li>
+      	
+      
+    
+  
+
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-narrow">
+
+      <div class="content">
+        
+<!--
+<div class="page-header">
+  <h1>redis </h1>
+</div>
+-->
+ 
+
+<div class="row-fluid post-full">
+  <div class="span12 ">
+    <div class="content card">
+        <div class="date_label">
+          <div class="day_month">
+          05/14
+          </div>
+          <div class="year">
+          2015
+          </div>
+        </div>
+      <h1>搭建Redis以及使用</h1>
+
+<hr />
+
+<h4>Redis的安装</h4>
+
+<ul>
+<li><p>在官网下载tar.gz的文件，并且解压，进入解压目录，执行 make&amp;&amp;make install，在make成功以后，会在src目录下多出一些可执行文件：redis-server，redis-cli等等。</p></li>
+<li><p>用cp命令复制到usr目录下运行。</p></li>
+</ul>
+
+
+<blockquote><p>cp redis-server /usr/local/bin/</p>
+
+<p>cp redis-cli /usr/local/bin/</p></blockquote>
+
+<ul>
+<li>新建目录，存放配置文件</li>
+</ul>
+
+
+<!--break-->
+
+
+<blockquote><p>mkdir /etc/redis</p>
+
+<p>mkdir /var/redis</p>
+
+<p>mkdir /var/redis/log</p>
+
+<p>mkdir /var/redis/run</p>
+
+<p>mkdir /var/redis/6379</p></blockquote>
+
+<ul>
+<li>在redis解压根目录中找到配置文件模板，复制到如下位置。</li>
+</ul>
+
+
+<blockquote><p>cp redis.conf /etc/redis/6379.conf</p></blockquote>
+
+<ul>
+<li>因为在etc目录下文件只读，所以建议先在其他目录更改conf文件，然后在cp到redis</li>
+</ul>
+
+
+<blockquote><p>daemonize yes</p>
+
+<p>pidfile /var/redis/run/redis_6379.pid</p>
+
+<p>logfile /var/redis/log/redis_6379.log</p>
+
+<p>dir /var/redis/6379</p></blockquote>
+
+<ul>
+<li>最后运行redis：</li>
+</ul>
+
+
+<blockquote><p><code>$ redis-server /etc/redis/6379.conf</code></p></blockquote>
+
+<ul>
+<li>启动redis-cli：</li>
+</ul>
+
+
+<blockquote><p><code>/usr/local/bin/redis-cli</code></p></blockquote>
+
+<h4>命令示例</h4>
+
+<ul>
+<li><ol>
+<li>KEYS/RENAME/DEL/EXISTS/MOVE/RENAMENX:</li>
+</ol>
+</li>
+</ul>
+
+
+<h5>在Shell命令行下启动Redis客户端工具。</h5>
+
+<blockquote><p>/> redis-cli</p></blockquote>
+
+<h5>清空当前选择的数据库，以便于对后面示例的理解。</h5>
+
+<blockquote><p>   redis 127.0.0.1:6379> flushdb</p>
+
+<p>   OK</p></blockquote>
+
+<h5>添加String类型的模拟数据。</h5>
+
+<blockquote><p>   redis 127.0.0.1:6379> set mykey 2</p>
+
+<p>  OK</p>
+
+<p>  redis 127.0.0.1:6379> set mykey2 "hello"</p>
+
+<p>   OK</p></blockquote>
+
+<h5>添加Set类型的模拟数据。</h5>
+
+<blockquote><p>  redis 127.0.0.1:6379> sadd mysetkey 1 2 3</p>
+
+<p>  (integer) 3</p></blockquote>
+
+<h5>添加Hash类型的模拟数据。</h5>
+
+<blockquote><p>   redis 127.0.0.1:6379> hset mmtest username "stephen"</p>
+
+<p>  (integer) 1</p></blockquote>
+
+<h5>根据参数中的模式，获取当前数据库中符合该模式的所有key，从输出可以看出，该命令在执行时并不区分与Key关联的Value类型。</h5>
+
+<blockquote><p>   redis 127.0.0.1:6379> keys my*</p>
+
+<p>  1) "mysetkey"</p>
+
+<p>   2) "mykey"</p>
+
+<p>   3) "mykey2"</p></blockquote>
+
+<h5>删除了两个Keys。</h5>
+
+<blockquote><p>  redis 127.0.0.1:6379> del mykey mykey2</p>
+
+<p>  (integer) 2</p></blockquote>
+
+<h5>查看一下刚刚删除的Key是否还存在，从返回结果看，mykey确实已经删除了。</h5>
+
+<blockquote><p>  redis 127.0.0.1:6379> exists mykey</p>
+
+<p>  (integer) 0</p></blockquote>
+
+<h5>查看一下没有删除的Key，以和上面的命令结果进行比较。</h5>
+
+<blockquote><p>  redis 127.0.0.1:6379> exists mysetkey</p>
+
+<p>   (integer) 1</p></blockquote>
+
+<h5>将当前数据库中的mysetkey键移入到ID为1的数据库中，从结果可以看出已经移动成功。</h5>
+
+<blockquote><p>   redis 127.0.0.1:6379> move mysetkey 1</p>
+
+<p>  (integer) 1</p>
+
+<h5>打开ID为1的数据库。</h5>
+
+<p>  redis 127.0.0.1:6379> select 1</p>
+
+<p>  OK</p></blockquote>
+
+<h5>查看一下刚刚移动过来的Key是否存在，从返回结果看已经存在了。</h5>
+
+<blockquote><p>   redis 127.0.0.1:6379[1]> exists mysetkey</p>
+
+<p>  (integer) 1</p></blockquote>
+
+<h5>在重新打开ID为0的缺省数据库。</h5>
+
+<blockquote><p>   redis 127.0.0.1:6379[1]> select 0</p>
+
+<p>  OK</p></blockquote>
+
+<h5>查看一下刚刚移走的Key是否已经不存在，从返回结果看已经移走。</h5>
+
+<blockquote><p>   redis 127.0.0.1:6379> exists mysetkey</p>
+
+<p>  (integer) 0</p></blockquote>
+
+<h5>准备新的测试数据。</h5>
+
+<blockquote><p>   redis 127.0.0.1:6379> set mykey "hello"</p>
+
+<p>  OK</p></blockquote>
+
+<h5>将mykey改名为mykey1</h5>
+
+<blockquote><p>   redis 127.0.0.1:6379> rename mykey mykey1</p>
+
+<p>   OK</p></blockquote>
+
+<h5>由于mykey已经被重新命名，再次获取将返回nil。</h5>
+
+<blockquote><p>   redis 127.0.0.1:6379> get mykey</p>
+
+<p>   (nil)</p></blockquote>
+
+<h5>通过新的键名获取。</h5>
+
+<blockquote><p>   redis 127.0.0.1:6379> get mykey1</p>
+
+<p>  "hello"</p></blockquote>
+
+<h5>由于mykey已经不存在了，所以返回错误信息。</h5>
+
+<blockquote><p>   redis 127.0.0.1:6379> rename mykey mykey1</p>
+
+<p>   (error) ERR no such key</p></blockquote>
+
+<h5>为renamenx准备测试key</h5>
+
+<blockquote><p>   redis 127.0.0.1:6379> set oldkey "hello"</p>
+
+<p>   OK</p>
+
+<p>   redis 127.0.0.1:6379> set newkey "world"</p>
+
+<p>   OK</p></blockquote>
+
+<h5>由于newkey已经存在，因此该命令未能成功执行。</h5>
+
+<blockquote><p>   redis 127.0.0.1:6379> renamenx oldkey newkey</p>
+
+<p>   (integer) 0</p></blockquote>
+
+<h5>查看newkey的值，发现它也没有被renamenx覆盖。</h5>
+
+<blockquote><p>   redis 127.0.0.1:6379> get newkey</p>
+
+<p>   "world"</p></blockquote>
+
+<ul>
+<li><ol>
+<li>PERSIST/EXPIRE/EXPIREAT/TTL:</li>
+</ol>
+</li>
+</ul>
+
+
+<h5>为后面的示例准备的测试数据。</h5>
+
+<blockquote><p>   redis 127.0.0.1:6379> set mykey "hello"</p>
+
+<p>   OK</p></blockquote>
+
+<h5>将该键的超时设置为100秒。</h5>
+
+<blockquote><p>   redis 127.0.0.1:6379> expire mykey 100</p>
+
+<p>  (integer) 1</p>
+
+<h5>通过ttl命令查看一下还剩下多少秒。</h5>
+
+<p>   redis 127.0.0.1:6379> ttl mykey</p>
+
+<p>   (integer) 97</p></blockquote>
+
+<h5>立刻执行persist命令，该存在超时的键变成持久化的键，即将该Key的超时去掉。</h5>
+
+<blockquote><p>   redis 127.0.0.1:6379> persist mykey</p>
+
+<p>   (integer) 1</p>
+
+<h5>ttl的返回值告诉我们，该键已经没有超时了。</h5>
+
+<p>   redis 127.0.0.1:6379> ttl mykey</p>
+
+<p>   (integer) -1</p></blockquote>
+
+<h5>为后面的expire命令准备数据。</h5>
+
+<blockquote><p>   redis 127.0.0.1:6379> del mykey</p>
+
+<p>   (integer) 1</p>
+
+<p>   redis 127.0.0.1:6379> set mykey "hello"</p>
+
+<p>   OK</p></blockquote>
+
+<h5>设置该键的超时被100秒。</h5>
+
+<blockquote><p>   redis 127.0.0.1:6379> expire mykey 100</p>
+
+<p>   (integer) 1</p></blockquote>
+
+<h5>用ttl命令看一下当前还剩下多少秒，从结果中可以看出还剩下96秒。</h5>
+
+<blockquote><p>   redis 127.0.0.1:6379> ttl mykey</p>
+
+<p>   (integer) 96</p></blockquote>
+
+<h5>重新更新该键的超时时间为20秒，从返回值可以看出该命令执行成功。</h5>
+
+<blockquote><p>   redis 127.0.0.1:6379> expire mykey 20</p>
+
+<p>   (integer) 1</p></blockquote>
+
+<h5>再用ttl确认一下，从结果中可以看出果然被更新了。</h5>
+
+<blockquote><p>   redis 127.0.0.1:6379> ttl mykey</p>
+
+<p>   (integer) 17</p></blockquote>
+
+<h5>立刻更新该键的值，以使其超时无效。</h5>
+
+<blockquote><p>   redis 127.0.0.1:6379> set mykey "world"</p>
+
+<p>   OK</p></blockquote>
+
+<h5>从ttl的结果可以看出，在上一条修改该键的命令执行后，该键的超时也无效了。</h5>
+
+<blockquote><p>   redis 127.0.0.1:6379> ttl mykey</p>
+
+<p>   (integer) -1</p></blockquote>
+
+<ul>
+<li><ol>
+<li>TYPE/RANDOMKEY/SORT:</li>
+</ol>
+</li>
+</ul>
+
+
+<h5>由于mm键在数据库中不存在，因此该命令返回none。</h5>
+
+<blockquote><p>   redis 127.0.0.1:6379> type mm</p>
+
+<p>   none</p></blockquote>
+
+<h5>mykey的值是字符串类型，因此返回string。</h5>
+
+<blockquote><p>   redis 127.0.0.1:6379> type mykey</p>
+
+<p>   string</p></blockquote>
+
+<h5>准备一个值是set类型的键。</h5>
+
+<blockquote><p>   redis 127.0.0.1:6379> sadd mysetkey 1 2</p>
+
+<p>   (integer) 2</p></blockquote>
+
+<h5>mysetkey的键是set，因此返回字符串set。</h5>
+
+<blockquote><p>   redis 127.0.0.1:6379> type mysetkey</p>
+
+<p>   set</p></blockquote>
+
+<h5>返回数据库中的任意键。</h5>
+
+<blockquote><p>   redis 127.0.0.1:6379> randomkey</p>
+
+<p>   "oldkey"</p>
+
+<h5>清空当前打开的数据库。</h5>
+
+<p>   redis 127.0.0.1:6379> flushdb</p>
+
+<p>   OK</p></blockquote>
+
+<h5>由于没有数据了，因此返回nil。</h5>
+
+<blockquote><p>   redis 127.0.0.1:6379> randomkey</p>
+
+<p>   (nil)</p></blockquote>
+
+    </div>
+
+ 
+<!--
+    <ul class="tag_box inline ">
+      <li><i class="icon-folder-open"></i></li>
+      
+      
+
+
+  
+     
+    	<li><a href="/categories.html#技术分享-ref">
+    		技术分享 <span>8</span>
+    	</a></li>
+    
+  
+
+
+    </ul>
+    
+
+  
+    <ul class="tag_box inline ">
+      <li><i class="icon-tags"></i></li>
+      
+      
+
+
+  
+     
+    	<li><a href="/tags.html#redis-ref">redis <span>1</span></a></li>
+    
+  
+
+
+
+    </ul>
+    -->
+    
+    <div class="pagination clearfix">
+      <ul class = "pull-right">
+      
+        <li class="prev"><a class="fa fa-arrow-circle-left" href="/2015/05/13/jekyll-learn" title="jekyll"> 前一篇</a></li>
+      
+        <li><a class="fa fa-th" href="/archive.html"> 所有日志</a></li>
+      
+        <li class="next disabled"><a >后一篇 <span class="fa fa-arrow-circle-right">  </span></a>
+      
+      </ul>
+    </div>
+    
+    
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'jekyllbootstrap'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+  </div>
+</div>
+
+
+      </div>
+      
+      <footer class="card clearfix">
+        <span style="font-size:30px;"class="fa fa-github pull-left"></span><a href="https://github.com/enml/blog/tree/jekyll-blog" style="display:inline-block;padding-right:80px;border-right:1px solid #bbb">fork me on GitHub</a>
+        <p class="pull-right">&copy; 2011 yuandaima
+          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+        </p>
+        
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
+
