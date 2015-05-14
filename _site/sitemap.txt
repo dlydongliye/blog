@@ -8,11 +8,9 @@ http://yuxiaole.github.io/jekyll/rss.xml
 http://yuxiaole.github.io/jekyll/sitemap.txt
 http://yuxiaole.github.io/jekyll/tags.html
 
-<<<<<<< HEAD
-http://yuxiaole.github.io/jekyll/2015/05/14/redis-learn
-=======
+http://yuxiaole.github.io/jekyll/2015/05/15/redis-guide
 http://yuxiaole.github.io/jekyll/2015/05/14/web-engineer
->>>>>>> 6689645bd5906b5ad2b7b07caabe73c4131bd99f
+http://yuxiaole.github.io/jekyll/2015/05/14/redis-learn
 http://yuxiaole.github.io/jekyll/2015/05/13/jekyll-learn
 http://yuxiaole.github.io/jekyll/2015/05/01/sort-algorithm
 http://yuxiaole.github.io/jekyll/2015/01/24/goodjob

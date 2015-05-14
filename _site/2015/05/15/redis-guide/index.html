@@ -3,8 +3,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>jekyll加载图片的路径问题</title>
-    <meta name="description" content="">
+    <title>Redis入门指南</title>
+    
     <meta name="author" content="yuandaima">
 
     <!-- Enable responsive viewport -->
@@ -111,7 +111,7 @@
         
 <!--
 <div class="page-header">
-  <h1>jekyll加载图片的路径问题 </h1>
+  <h1>Redis入门指南 <small>Supporting tagline</small></h1>
 </div>
 -->
  
@@ -121,21 +121,73 @@
     <div class="content card">
         <div class="date_label">
           <div class="day_month">
-          04/24
+          05/15
           </div>
           <div class="year">
-          2014
+          2015
           </div>
         </div>
-      <h1>jekyll加载图片的路径问题</h1>
+      <h1>Redis入门指南前两章</h1>
 
 <hr />
 
-<p>　一开始使用根目录<code>/assets/…/img/bg.png</code>的方式，在localhost调试成功，但在github pages失败。
-　后来试了一下当前目录方式<code>./img/bg.png</code>成功。也可以用<code>img/bg.png</code>表示当前目录。</p>
+<h4>Redis安装</h4>
+
+<ul>
+<li><p>官网下载压缩包，解压。</p></li>
+<li><p>cd到文件夹，命令行<code>make</code>。</p></li>
+<li><p><code>sudo make install</code>。将若干文件转移到bin中，以后可以直接使用，如redis-server等。</p></li>
+<li><p><code>sudo make test</code>。将会对所有的redis命令进行测试。</p></li>
+</ul>
+
 
 <!--break-->
 
+
+<h4>启动和停止Redis</h4>
+
+<h5>启动</h5>
+
+<ul>
+<li><p>开发环境直接启动：<code>redis-serve</code>默认端口号6379 <code>redis-server --port 6380</code>修改端口号</p></li>
+<li><p>初始化脚本启动redis: Redis随系统自动运行，源代码中有utils文件夹，其中有个redis_init_script脚本文件。修改如下：</p></li>
+</ul>
+
+
+<blockquote><p>配置初始化脚本。将文件复制到/etc/init.d目录，目录名为redis_6379，修改第六行redispost变量的值为6379。这数字表示端口号。</p>
+
+<p>创建/etc/redis（存放配置文件）和/var/redis/端口号（存放持久化文件）两个文件夹</p>
+
+<p>修改配置文件redis.conf。将配置文件模板复制到/etc/redis目录，取名为 6379.conf。修改如下：daemonize改为yes; pidfile改为/var/run/redis_6379.pid; port改为端口号;dir改为/var/redis/6379;</p>
+
+<p><code>sudo update-rc.d redis_6379 defaults</code></p></blockquote>
+
+<h5>停止</h5>
+
+<p>考虑到Redis可能正在将内存数据写到硬盘，强制停止可能会导致数据丢失。所以<code>redis-cli shutdown</code></p>
+
+<h4>Redis命令行客户端redis-cli</h4>
+
+<h5>发送命令</h5>
+
+<p>开启客户端：<code>redis-cli -h 127.0.0.1 -p 6379</code> 其中 -h,-p默认不选；</p>
+
+<p>提供ping测试链接状态，正常返回pong。<code>redis-cli ping</code></p>
+
+<h5>命令返回值</h5>
+
+<ul>
+<li><p>状态回复，例如ok,pong等；</p></li>
+<li><p>错误回复，以（error）开头；</p></li>
+<li><p>整数回复，以（integer）开头;</p></li>
+<li><p>字符串回复，以""包裹；</p></li>
+<li><p>多行字符串回复，每行以序号开头；</p></li>
+</ul>
+
+
+<h4>多数据库</h4>
+
+<p>每个数据库对外都是以一个从０开始的递增，默认有１６个，默认选择０号数据库，可以通过<code>select 1</code>。Redis不支持对数据库名进行修改，不可以为每个数据库设置密码，即要么全部可访问，要么一个也不可以，但是这些数据库不是完全隔离，如：FLUSHALL可以去除所有数据。不适宜存放不同应用数据，适宜：０存放生产环境数据，１存放测试环境数据。</p>
 
     </div>
 
@@ -149,8 +201,8 @@
 
   
      
-    	<li><a href="/categories.html#技术分享-ref">
-    		技术分享 <span>9</span>
+    	<li><a href="/categories.html#web-ref">
+    		web <span>2</span>
     	</a></li>
     
   
@@ -168,7 +220,7 @@
 
   
      
-    	<li><a href="/tags.html#路径-ref">路径 <span>1</span></a></li>
+    	<li><a href="/tags.html#Redis-ref">Redis <span>1</span></a></li>
     
   
 
@@ -180,11 +232,11 @@
     <div class="pagination clearfix">
       <ul class = "pull-right">
       
-        <li class="prev"><a class="fa fa-arrow-circle-left" href="/2014/04/23/finish-jekyll" title="对5天来关于jekyll的心得"> 前一篇</a></li>
+        <li class="prev"><a class="fa fa-arrow-circle-left" href="/2015/05/14/web-engineer" title="前端工程师"> 前一篇</a></li>
       
         <li><a class="fa fa-th" href="/archive.html"> 所有日志</a></li>
       
-        <li class="next"><a  href="/2014/04/25/python-code" title="python list的技巧">后一篇 <span class="fa fa-arrow-circle-right">  </span></a></li>
+        <li class="next disabled"><a >后一篇 <span class="fa fa-arrow-circle-right">  </span></a>
       
       </ul>
     </div>
