@@ -4,7 +4,7 @@
  <title>yuandaima</title>
  <link href="http://yuxiaole.github.io/jekyll/" rel="self"/>
  <link href="http://yuxiaole.github.io/jekyll"/>
- <updated>2015-05-14T08:44:01-07:00</updated>
+ <updated>2015-05-14T21:22:10-07:00</updated>
  <id>http://yuxiaole.github.io/jekyll</id>
  <author>
    <name>yuandaima</name>
@@ -101,7 +101,7 @@
 
 &lt;p&gt;举个例子，根据indeed.com抓取的数千家网站的职位显示：目前前端的热门岗位——「HTML5」是需求增长最快的开发岗位，在所有开发职位中排名第一，MongoDB和iOS紧随其后位列第二、第三。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/100920-a0bf3e9e1ae8ad23.png?imageView2/2/w/1240/q/100&quot; alt=&quot;web&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://yuxiaole.github.io/test/image/web.png&quot; alt=&quot;web&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;可见，HTML5可以说是最热门的前端岗位了，在2010年和2014年底有两次爆发性增长，现在在美国的岗位需求甚至超过了iOS。&lt;/p&gt;
 
@@ -111,21 +111,21 @@
 
 &lt;p&gt;可能很多人认为前端开发和web开发类似，而web开发已经有20多年的历史，所以前端并不是一个新领域。然而，前端工程师的概念中的「接口技术实现和用户体验作为一个专业的工作领域」，却无疑是很新的。大概几年前，前端开发的技术增长迅猛，如下图所示：&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/100920-d3c95d559aa5004a.png?imageView2/2/w/1240/q/100&quot; alt=&quot;new&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://yuxiaole.github.io/test/image/new.png&quot; alt=&quot;new&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;15年或更久以前，web的可视化设计和技术实现所需要的资源是平均分配的。随着网站的发展——网站不仅是一个登录页面，工程资源的需求越来越明显。人们开始专门学习网站专用的JS、后端技术、UX、数据库，甚至系统设计。&lt;/p&gt;
 
 &lt;p&gt;今天，一个像AirBnB/Facebook/Quora的Web应用程序，投入的工程资源比设计资源多得多。换句话说，如今，做出网页的视觉设计比技术实现要更快，所以当今的web需求要求更多的工程师供应。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/100920-29a474c12e5f2f35.jpg?imageView2/2/w/1240/q/100&quot; alt=&quot;engineer&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://yuxiaole.github.io/test/image/engineer.jpg&quot; alt=&quot;engineer&quot; /&gt;&lt;/p&gt;
 
 &lt;h4&gt;现在，一位合格的前端工程师，必须对视觉设计有兴趣（或者乐于做一个受虐狂▼）。&lt;/h4&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/100920-85dddc7874142e8a.jpg?imageView2/2/w/1240/q/100&quot; alt=&quot;game&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://yuxiaole.github.io/test/image/game.jpg&quot; alt=&quot;game&quot; /&gt;&lt;/p&gt;
 
 &lt;h4&gt;很显然，要处理大量的Web应用程序需求，技术任务就要进行分类，以便于多人同时处理网站请求。事实上现在已经不可能一个人快速地解决所有的技术细节了。&lt;/h4&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/100920-9ef8899b4ce9433c.jpg&quot; alt=&quot;reason&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://yuxiaole.github.io/test/image/response.jpg&quot; alt=&quot;reason&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;现在还有一类人是独自处理一个Web应用程序的所有问题，即「全栈工程师」，但是优秀的全栈工程师同样如大熊猫一般数量稀少。&lt;/p&gt;
 
@@ -1175,7 +1175,7 @@ void heap_sort(int arr[], int len)
 
 &lt;hr /&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/100920-ea405e8dfa442cc4.png?imageView2/2/w/1240/q/100&quot; alt=&quot;sort&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://yuxiaole.github.io/test/image/goodjob.png&quot; alt=&quot;sort&quot; /&gt;&lt;/p&gt;
 
 &lt;!--break--&gt;
 
@@ -1186,7 +1186,7 @@ void heap_sort(int arr[], int len)
 
 &lt;p&gt;我们这里有2500+公司，但程序员在我们的平台上可以拒绝任何一家发出邀约的公司，我一直很好奇为何有的公司接受率特别高，有的又奇低无比？按行业统计了下他们的邀请接受率，tada~统计答案来了：&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/100920-167350cf356dc2a5.png&quot; alt=&quot;answer&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://yuxiaole.github.io/test/image/answer.png&quot; alt=&quot;answer&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;O2O、金融、电子商务，是面试邀请接受率最高的行业。可能和市场需求及发展前景相关。&lt;/p&gt;
 
@@ -1196,19 +1196,19 @@ void heap_sort(int arr[], int len)
 
 &lt;p&gt;其他工作了三五年的程序员现在的薪水如何？&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/100920-41920acc40198686.png?imageView2/2/w/1240/q/100&quot; alt=&quot;salary&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://yuxiaole.github.io/test/image/answer.png&quot; alt=&quot;salary&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;并不是给出越高的薪资就是越靠谱的公司，这个之前我们也有过统计。我惊奇地发现，原有薪资涨幅15-40%是一般靠谱的公司会给出的薪资。&lt;/p&gt;
 
 &lt;p&gt;程序员跳槽一次薪资涨幅能达到什么水平？&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/100920-fdc19ce95e1608dd.png?imageView2/2/w/1240/q/100&quot; alt=&quot;job&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://yuxiaole.github.io/test/image/job.png&quot; alt=&quot;job&quot; /&gt;&lt;/p&gt;
 
 &lt;h4&gt;被拍卖的优秀程序员offer薪资的平均保守上涨幅度为31.9%。&lt;/h4&gt;
 
 &lt;p&gt;再精准一些，我们看看使用不同语言的程序员的薪资有着怎样的涨幅？&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/100920-ddec973fc9b2304c.png?imageView2/2/w/1240/q/100&quot; alt=&quot;language&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://yuxiaole.github.io/test/image/language.png&quot; alt=&quot;language&quot; /&gt;&lt;/p&gt;
 
 &lt;h4&gt;3、看软性指标&lt;/h4&gt;
 
@@ -1216,7 +1216,7 @@ void heap_sort(int arr[], int len)
 
 &lt;p&gt;另外在面试中要考察的因素还有：&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/100920-cfd30fb93d40e517.png&quot; alt=&quot;reason&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://yuxiaole.github.io/test/image/reason.png&quot; alt=&quot;reason&quot; /&gt;&lt;/p&gt;
 
 &lt;h4&gt;二、为什么要拒绝一个看起来不错的机会？&lt;/h4&gt;
 
@@ -1228,7 +1228,7 @@ void heap_sort(int arr[], int len)
 
 &lt;p&gt;28岁的时候有家有口有房贷，选择的机会成本更高，自然也就相对保守。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/100920-c83c3109d5c63907.png&quot; alt=&quot;year&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://yuxiaole.github.io/test/image/year.png&quot; alt=&quot;year&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt; 即便面试邀请在所在城市，离我住地太远也不行。&lt;/p&gt;&lt;/li&gt;
@@ -1241,7 +1241,7 @@ void heap_sort(int arr[], int len)
 
 &lt;p&gt;根据100offer的入职名单，程序员跳槽集中在四个领域：电子商务、金融、O2O、在线教育。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/100920-c9b590f07204ae44.png&quot; alt=&quot;sort&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://yuxiaole.github.io/test/image/goodjob_sort.png&quot; alt=&quot;sort&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;100offer 说：&lt;/p&gt;
 

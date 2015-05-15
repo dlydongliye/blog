@@ -1,6 +1,6 @@
 ---
 layout: post
-title: web-engineer
+title: 前端工程师
 category : web
 tagline: "Supporting tagline"
 tags : [web]
@@ -19,7 +19,7 @@ tags : [web]
 
 举个例子，根据indeed.com抓取的数千家网站的职位显示：目前前端的热门岗位——「HTML5」是需求增长最快的开发岗位，在所有开发职位中排名第一，MongoDB和iOS紧随其后位列第二、第三。
 
-![web](http://upload-images.jianshu.io/upload_images/100920-a0bf3e9e1ae8ad23.png?imageView2/2/w/1240/q/100)
+![web](http://yuxiaole.github.io/test/image/web.jpg)
 
 可见，HTML5可以说是最热门的前端岗位了，在2010年和2014年底有两次爆发性增长，现在在美国的岗位需求甚至超过了iOS。
 
@@ -29,21 +29,21 @@ tags : [web]
 
 可能很多人认为前端开发和web开发类似，而web开发已经有20多年的历史，所以前端并不是一个新领域。然而，前端工程师的概念中的「接口技术实现和用户体验作为一个专业的工作领域」，却无疑是很新的。大概几年前，前端开发的技术增长迅猛，如下图所示：
 
-![new](http://upload-images.jianshu.io/upload_images/100920-d3c95d559aa5004a.png?imageView2/2/w/1240/q/100)
+![new](http://yuxiaole.github.io/test/image/new.jpg)
 
 15年或更久以前，web的可视化设计和技术实现所需要的资源是平均分配的。随着网站的发展——网站不仅是一个登录页面，工程资源的需求越来越明显。人们开始专门学习网站专用的JS、后端技术、UX、数据库，甚至系统设计。
 
 今天，一个像AirBnB/Facebook/Quora的Web应用程序，投入的工程资源比设计资源多得多。换句话说，如今，做出网页的视觉设计比技术实现要更快，所以当今的web需求要求更多的工程师供应。
 
-![engineer](http://upload-images.jianshu.io/upload_images/100920-29a474c12e5f2f35.jpg?imageView2/2/w/1240/q/100)
+![engineer](http://yuxiaole.github.io/test/image/engineer.jpg)
 
 ####现在，一位合格的前端工程师，必须对视觉设计有兴趣（或者乐于做一个受虐狂▼）。
 
-![game](http://upload-images.jianshu.io/upload_images/100920-85dddc7874142e8a.jpg?imageView2/2/w/1240/q/100)
+![game](http://yuxiaole.github.io/test/image/game.jpg)
 
 ####很显然，要处理大量的Web应用程序需求，技术任务就要进行分类，以便于多人同时处理网站请求。事实上现在已经不可能一个人快速地解决所有的技术细节了。
 
-![reason](http://upload-images.jianshu.io/upload_images/100920-9ef8899b4ce9433c.jpg)
+![reason](http://yuxiaole.github.io/test/image/response.jpg)
 
 现在还有一类人是独自处理一个Web应用程序的所有问题，即「全栈工程师」，但是优秀的全栈工程师同样如大熊猫一般数量稀少。
 
