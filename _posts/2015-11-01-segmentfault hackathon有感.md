@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 后智能手机时代
+title: Segmentfault
 category : 扯淡
 tagline: "Supporting tagline"
-tags : [机器人, 智能眼镜]
+tags : [Segmentfault]
 ---
 {% include JB/setup %}
 # Segmentfault Hackathon参与有感
@@ -12,12 +12,12 @@ tags : [机器人, 智能眼镜]
 @(hackathon)[Segmentfault|Android|Markdown]()
 
 **Hackathon**  编程马拉松的灵魂是合作地编写程序和应用。 编程马拉松的时长一般在几天到一周不等。编程马拉松不是编写些一次性作品那么简单。编程马拉松的精髓在于：很多人，在一段特定的时间内，相聚在一起，以他们想要的方式，去做他们想做的事情——整个编程的过程几乎没有任何限制或者方向。
- \<!--break--\>
-- **[Segmentfault]()[1]()** ：SegmentFault 是一家中文的开发者社区及媒体。最初的产品原型来自于国外最大的程序员问答社区 StackOverflow、现阶段获得1024 万融资；
-- **[Markdown]()[2]()** ：简洁高效的编辑器；
-- **队伍** ：NullPointer团队：阿蔡，阿媛，阿乐。
+- [Segmentfault]()[1]：SegmentFault 是一家中文的开发者社区及媒体。最初的产品原型来自于国外最大的程序员问答社区 StackOverflow、现阶段获得1024 万融资；
+- [Markdown]()[2]()：简洁高效的编辑器；
+- 队伍 ：NullPointer团队：阿蔡，阿媛，阿乐。
 
 ---- ---------------
+<!--break-->
 
 [TOC]()
 
