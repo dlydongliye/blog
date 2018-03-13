@@ -1,7 +1,7 @@
 ---
 layout: page
-title: neu
-tagline: neuyuandaima
+title: Liye's Blog
+tagline: Liye
 ---
 {% include JB/setup %}
 
