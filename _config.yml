@@ -10,13 +10,13 @@ safe: false
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
-title : yuandaima
+title : Liye's blog
 tagline: Site Tagline
 url: http://www.dongliye.cn/blog
 author :
-  name : yuandaima
-  email : yuxiaole@mucfc.com
-  github : yuxiaole
+  name : Liye
+  email : mail@dongliye.cn
+  github : dlydongliye  
   twitter : username
   feedburner : feedname
 
