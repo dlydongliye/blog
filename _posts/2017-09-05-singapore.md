@@ -5,7 +5,6 @@ category : 游记
 tags : [分享,新加坡]
 published: true
 ---
-{% include JB/setup %}
 
 # 再见北京，去过一个温暖的冬天
 
