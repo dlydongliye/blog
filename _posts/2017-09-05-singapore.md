@@ -6,6 +6,7 @@ tags : [分享,新加坡]
 published: true
 ---
 {% include JB/setup %}
+
 #再见了9月的北京，我要去过一个温暖的冬天
 
 访学的开始：北京→新加坡
