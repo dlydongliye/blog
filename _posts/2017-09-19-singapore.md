@@ -2,7 +2,7 @@
 layout: post
 title: 时光飞逝，我却百无聊赖
 category : 访学记
-tags : [新加坡，日常]
+tags : [新加坡,日常]
 published: true
 ---
 {% include JB/setup %}
