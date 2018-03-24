@@ -19,6 +19,8 @@ published: true
 
 随室友去打了场球，回来继续发呆的日子。
 
+<img src="/blog/image/singapore/staircase.jpg" width="45%" height="45%">
+
 我时常思考着找些事做，想从这无尽的空虚中解脱出来，但有时想想，无聊似乎又并不是一种选择吧。
 
 但即使要落入平庸的人生，我仍旧抱着一丝侥幸，希望她是非现实性的。
