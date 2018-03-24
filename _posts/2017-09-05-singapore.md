@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 不以告别为结束的开始
-category : 游记
-tags : [新加坡]
+category : 访学纪
+tags : [旅行,日常,新加坡]
 published: true
 ---
 {% include JB/setup %}
