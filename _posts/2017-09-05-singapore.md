@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 不以告别为结束的开始
-category : 访学纪
+category : 访学记
 tags : [旅行,日常,新加坡]
 published: true
 ---
